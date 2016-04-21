@@ -391,18 +391,20 @@
     background-position: left bottom
 }
 
-.list-view-topline{
-    margin: 0 0 10px;
+.catalog_container{
+	position: relative;
 }
 
-.list-view-topline:after{
-    content: "";
-    display: table;
-    clear: both;
+.catalog-style-box{
+    position: absolute;
+    left: 0;
+    top: 0;
 }
 
-.list-view-topline .summary{
-    float: right;
+.summary{
     line-height: 35px;
-    margin-bottom: 0;
+    height: 35px;
+    margin-bottom: 10px;
+    text-align: right;
+    padding-left: 90px;
 }
