@@ -408,3 +408,20 @@
     text-align: right;
     padding-left: 90px;
 }
+
+/*---------------------------------------------*/
+
+.catalog_container__action .list-view{
+	padding-top: 45px;
+}
+
+.tab-container .panel-container > div ul li:before{
+	content: "";
+	display: block;
+	float: left;
+	width: 8px;
+	height: 8px;
+	margin: 3px 5px 0 0;
+	background: url(/upload/images/clean%28109%29.png) no-repeat 0 0;
+	background-size: contain;
+}
