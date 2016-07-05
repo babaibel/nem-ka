@@ -1643,7 +1643,7 @@ $(document).ready(function () {
 
     $(".show-all_block .show-all").click(function () {
         if ($(".goods-characteristics_container").hasClass("open")) {
-            $(this).closest(".goods-characteristics_container").removeClass("open").css('height', '404px');
+            $(this).closest(".goods-characteristics_container").removeClass("open").css('height', '345px');
             $(this).children('span').text("Показать все характеристики");
         }
         else {
@@ -1693,22 +1693,21 @@ $(document).ready(function () {
 
     $('#cal_tabs').easytabs({animate: false});
 
-
     if ($("#tabs11-1").hasClass("active")) {
         $("#goods-tab-container .panel-container .active .slider-for").slick({
             slidesToShow: 1,
             slidesToScroll: 1,
-            arrows: true,
+            arrows: false,
             fade: true,
             asNavFor: '.slider-nav'
         });
         $("#goods-tab-container .panel-container .active .slider-nav").slick({
-            slidesToShow: 4,
+            slidesToShow: 3,
             slidesToScroll: 1,
             asNavFor: '.slider-for',
             dots: false,
             centerMode: false,
-            variableWidth: true,
+            arrows: true,
             focusOnSelect: true
         });
     }
@@ -1722,7 +1721,7 @@ $(document).ready(function () {
             asNavFor: '.slider-nav'
         });
         $("#goods-tab-container .panel-container .active .slider-nav").slick({
-            slidesToShow: 4,
+            slidesToShow: 3,
             slidesToScroll: 1,
             asNavFor: '.slider-for',
             dots: false,
