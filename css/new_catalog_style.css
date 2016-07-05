@@ -409,19 +409,37 @@
     padding-left: 90px;
 }
 
-/*---------------------------------------------*/
-
-.catalog_container__action .list-view{
-	padding-top: 45px;
+.tab-container .panel-container > div ul li:before{
+    content: "";
+    display: block;
+    float: left;
+    width: 8px;
+    height: 8px;
+    margin: 3px 5px 0 0;
+    background: url(/upload/images/clean%28109%29.png) no-repeat 0 0;
+    background-size: contain;
 }
 
-.tab-container .panel-container > div ul li:before{
-	content: "";
-	display: block;
-	float: left;
-	width: 8px;
-	height: 8px;
-	margin: 3px 5px 0 0;
-	background: url(/upload/images/clean%28109%29.png) no-repeat 0 0;
-	background-size: contain;
+.catalog_container .list-view{
+    padding-top: 0;
+}
+
+.catalog_container .list-view .summary{
+    margin-bottom: 10px;
+}
+
+.catalog_container__action .list-view{
+    padding-top: 45px!important;
+}
+
+.catalog_item2_price s{
+    color: #f04000;
+    font: bold 20px/22px Arial;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.catalog_container__action .catalog_item2_price s + span{
+    color: #50b43e;
 }
