@@ -1659,29 +1659,30 @@ $(document).ready(function () {
         slidesToScroll: 6
     });
 
-    /*$('.js-banner-slider').slick({
+    $('.js-banner-slider').slick({
      dots: true,
      appendArrows: $('.banner-slider-nav'),
      appendDots: $('.banner-slider-nav')
-     });*/
+     });
 
-    /*$('.slider-for').slick({
+    $('.slider-for').slick({
      slidesToShow: 1,
      slidesToScroll: 1,
-     arrows: true,
+     arrows: false,
      fade: true,
      asNavFor: '.slider-nav'
      });
      $('.slider-nav').slick({
-     slidesToShow: 4,
+     slidesToShow: 3,
      slidesToScroll: 1,
      asNavFor: '.slider-for',
      dots: false,
      centerMode: false,
+     arrows: true,
      focusOnSelect: true
-     });*/
-    if ($('#tab-container, #goods-tab-container').length) {
+     });
 
+    if ($('#tab-container, #goods-tab-container').length) {
         $('#tab-container, #goods-tab-container').each(function () {
             if ($('ul > li', $(this)).length) {
                 $(this).easytabs({
@@ -1712,24 +1713,25 @@ $(document).ready(function () {
         });
     }
 
-    $('#goods-tab-container').bind('easytabs:after', function () {
-        $("#goods-tab-container .panel-container .active .slider-for").slick({
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            arrows: true,
-            fade: true,
-            asNavFor: '.slider-nav'
+    
+        $('#goods-tab-container').bind('easytabs:after', function () {
+            $("#goods-tab-container .panel-container .active .slider-for").slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: true,
+                fade: true,
+                asNavFor: '.slider-nav'
+            });
+            $("#goods-tab-container .panel-container .active .slider-nav").slick({
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                asNavFor: '.slider-for',
+                dots: false,
+                centerMode: false,
+                variableWidth: true,
+                focusOnSelect: true
+            });
         });
-        $("#goods-tab-container .panel-container .active .slider-nav").slick({
-            slidesToShow: 3,
-            slidesToScroll: 1,
-            asNavFor: '.slider-for',
-            dots: false,
-            centerMode: false,
-            variableWidth: true,
-            focusOnSelect: true
-        });
-    });
 
     $('.js-close-btn').click(function () {
         $(this).parent('.alert-container').slideUp();
