@@ -433,7 +433,7 @@
 }
 
 .catalog_item2_price s{
-    color: #f04000;
+    color: #e31e25;
     font: bold 20px/22px Arial;
     display: inline-block;
     vertical-align: middle;
@@ -441,5 +441,5 @@
 }
 
 .catalog_container__action .catalog_item2_price s + span{
-    color: #50b43e;
+    color: #1f9974;
 }

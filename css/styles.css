@@ -3248,6 +3248,19 @@ body {
     padding: 0 10px;
 }
 
+.login_row label{
+    display: block;
+    margin-bottom: 3px;
+}
+
+.login_row label.checkbox label{
+    margin-left: 5px;
+}
+
+.login_row label.checkbox input{
+    vertical-align: middle;
+}
+
 .login_row p {
     margin-bottom: 6px;
 }
@@ -3717,7 +3730,7 @@ ol li {
 }
 
 .compare_item .catalog_item_link a {
-    color: #00aadd;
+    color: #f36600;
     font: 12px/14px Arial;
 }
 
@@ -3760,7 +3773,7 @@ ol li {
     height: 24px;
     padding: 0 10px 0 30px;
     text-transform: uppercase;
-    background: url("../img/icons/add_cart-ico.png") no-repeat 10px 6px #ff8d00;
+    background: url("../img/icons/add_cart-ico.png") no-repeat 10px 6px #f36600;
     text-decoration: none;
 }
 
@@ -3815,6 +3828,10 @@ ol li {
     position: absolute;
     left: 18px;
     bottom: 10px;
+}
+
+.news_item .btn_orange:hover{
+    opacity: .8;
 }
 
 .news_item .text .img {
