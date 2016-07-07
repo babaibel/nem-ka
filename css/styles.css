@@ -5920,9 +5920,12 @@ select.js-select {
 }
 
 .product-card__middle-box{
-/*     height: 135px;
-    line-height: 135px; */
     text-align: center;
+}
+
+.product-card__middle-box .special-offer__price{
+    color: #47595e;
+    border: 0;
 }
 
 .b-product-card--view3 .product-card__middle-box{
