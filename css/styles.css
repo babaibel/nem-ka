@@ -2600,7 +2600,7 @@ body {
 }
 
 .b-cart-table a {
-    color: #0086b9;
+    color: #df5e00;
 }
 
 .item-name a:hover .hide-item-image {
@@ -3468,7 +3468,7 @@ body {
     padding-left: 20px;
     color: #737373;
     font: 13px/18px Arial, sans-serif;
-    background: url("../img/icons/list_blue.png") no-repeat left 5px;
+    background: url("../img/icons/list_orange.png") no-repeat left 5px;
     margin-bottom: 4px;
 }
 
@@ -4407,7 +4407,7 @@ div.delivery_location p.bold {
 }
 
 .table-orders a {
-    color: #0086b9;
+    color: #df5e00;
 }
 
 .support_form label {
