@@ -1197,6 +1197,7 @@ body {
 
 .more_items_block .hits__item .desc {
     text-decoration: underline;
+    color: #df5e00;
 }
 
 .h2_title {
@@ -2472,7 +2473,7 @@ body {
 }
 
 .sidebar-block_item_text a {
-    color: #0089ca;
+    color: #df5e00;
 }
 
 .sidebar-block_item_img {
@@ -2726,7 +2727,7 @@ body {
 }
 
 .catalog_folders_header ul li.active {
-    background-color: #25b6e2;
+    background-color: #df5e00;
 }
 
 .catalog_folders_header ul li.active a {
@@ -2736,7 +2737,7 @@ body {
 }
 
 .catalog_folders_content {
-    background: #25b6e2;
+    background: #df5e00;
     padding: 14px 20px;
 }
 
@@ -2912,7 +2913,7 @@ body {
 .big_blue_btn {
     display: inline-block;
     font: bold 12px/32px Arial;
-    background: #009dd4;
+    background: #df5e00;
     height: 32px;
     padding: 0 15px;
     color: #fff;
@@ -5306,9 +5307,9 @@ p {
 
 /*}*/
 
-/* .panel-container .slider-nav .slick-slide img {
+.panel-container .slider-nav .slick-slide img {
     margin-right: 10px;
-} */
+}
 
 select.js-select {
     background-color: #fff;
@@ -5360,6 +5361,414 @@ select.js-select {
 
 .news_item:nth-child(2n+1){
     margin-right: 0;
+}
+
+
+.catalog_item_compare .compare_right{
+  height: 25px;
+  font: 10px/25px "HelveticaNeueCyrBold";
+  background: url('../img/icons/icon_time_new.png') no-repeat 6px center #42b7e2;
+  color: #fff;
+  text-decoration: none;
+  padding-left: 30px;
+  padding-right: 6px;
+  text-transform: uppercase;
+}
+
+.catalog_item_add_cart_btn{
+  position: absolute;
+  right: 25px;
+  top: 49px;
+  background: url("../img/icons/add_cart-ico.png") no-repeat 10px 6px #ff8d00;
+  border: 0 none;
+  color: #fff;
+  display: inline-block;
+  font: 12px/24px "HelveticaNeueCyrBold",sans-serif;
+  height: 24px;
+  margin-left: 10px;
+  padding: 0 10px 0 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.catalog_item_add_all{
+  position: absolute;
+  right: 25px;
+  top: 78px;
+  height: 25px;
+  font: 10px/25px "HelveticaNeueCyrBold";
+  background: #42b7e2;
+  color: #fff;
+  text-decoration: none;
+  width: 111px;
+  text-align: center;
+  display: block;
+  text-transform: uppercase;
+}
+
+.catalog_item_price_status{
+  position: absolute;
+  right: 25px;
+  top: 32px;
+  text-transform: uppercase;
+  font:bold 12px/16px Arial;
+}
+
+.catalog_item_weight{
+  color: #656565;
+  font: 12px/16px "HelveticaNeueCyrBold";
+  position: absolute;
+  left: 30px;
+  top: 22px;
+  display: block;
+  min-width: 25px;
+  padding-top: 28px;
+  background: url('../img/icons/icon_weight.png') no-repeat top left;
+}
+
+.catalog_item_art{
+  top: 17px;
+}
+
+.catalog_item_compare{
+  height: 25px;
+}
+
+.catalog_item_price span{
+  line-height: 30px;
+}
+
+.catalog_item_price{
+  margin-top: -6px;
+  margin-bottom: 4px;
+}
+
+.catalog_item_price_info{
+  display: inline-block;
+  padding: 0 15px;
+  background: #f5e3cd;
+  font-size: 13px;
+  color: #4b4b4b;
+  line-height: 30px;
+  display: inline-block;
+  position: relative;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+.catalog_item_price_info:before{
+  content: "";
+  border-width: 7px;
+  border-style: solid;
+  border-color: transparent  #f5e3cd  transparent transparent;
+  position: absolute;
+  left: -14px;
+  width: 0;
+  height: 0;
+  top: 50%;
+  margin-top: -6px;
+}
+
+.catalog_item_price s{
+  font-size: 14px;
+}
+
+.catalog_item_text{
+    height: 42px;
+}
+
+.catalog_item.not_pallet .catalog_item_text{
+    height: 70px;
+    margin-bottom: 10px;
+}
+
+.catalog_item.add_pallet.add_parameters{
+    height: 406px;
+}
+
+.catalog_item.catalog_useful{
+    height: 406px;
+}
+
+.catalog_item{
+    height: 406px;
+}
+
+.catalog_item.no_useful .catalog_item_text{
+    height: 98px;
+    margin-bottom: 5px;
+}
+
+.catalog_item.no_useful.not_pallet .catalog_item_text{
+    height: 126px;
+    margin-bottom: 10px;
+}
+
+.goods-main-table__col2 .product-card__form .select2-container .select2-selection--single .select2-selection__rendered{
+    white-space: normal;
+    padding-top: 5px;
+    line-height: 18px;
+    word-wrap: break-word;
+    padding-bottom: 5px;
+}
+
+.goods-main-table__col2 .product-card__form .select2-container .select2-selection--single{
+    height: 63px;
+    overflow: hidden;
+}
+
+.cal_info:after,
+.cal_form:after{
+    clear: both;
+    content: "";
+    display: table;
+}
+
+.cal_info_img{
+    float: left;
+    border: 1px solid #c1c1c1;
+    margin-bottom: 15px;
+}
+
+.cal_info_img img{
+    display: block;
+    max-height: 140px;
+}
+
+.cal_info_col{
+    margin-left: 16px;
+    float: left;
+    width: 280px;
+}
+
+.cal_info_col p{
+    margin-bottom: 10px;
+}
+
+.cal_info_col p a{
+    color: #df5e00;
+    font: 14px/16px Arial,sans-serif;   
+}
+
+.cal_form{
+    background: #e0e0e0;
+    padding: 20px 0 20px 20px;
+    margin-bottom: 20px;
+}
+
+.cal_form_col_title{
+    font: bold 14px/16px Arial,sans-serif;
+    margin-bottom: 8px;    
+}
+
+.cal_form_col{
+    width: 20%;
+    padding-right: 20px;
+    float: left;
+}
+
+.cal_form_col .select2-container{
+    width: 100%!important;
+}
+
+.cal_form_col input[type="text"]{
+    box-shadow: inset 0 0 3px rgba(0,0,0,0.5);
+    width: 100%;
+    height: 50px;
+    font: bold 18px/50px Arial,sans-serif;
+    border: 0;
+    padding: 0 10px;
+    text-align: center;
+}
+
+.cal_form_col-long{
+    width: 35%;
+}
+
+.cal_form_col-long2{
+    width: 25%;
+}
+
+.cal_form_col .select2-container .select2-selection--single{
+    height: 50px;
+    box-shadow: inset 0 0 3px rgba(0,0,0,0.5);
+    border-radius: 0;
+}
+
+.cal_form_col .select2-container .select2-selection--single .select2-selection__rendered{
+    white-space: normal;
+    overflow: hidden;
+    line-height: 20px;
+    padding-top: 5px;
+    padding-right: 30px;
+}
+
+.cal_form_col .select2-container--default .select2-selection--single .select2-selection__arrow{
+    height: 50px;
+    width: 30px;
+}
+
+.cal_form_col input[type="submit"]{
+    margin-top: 24px;
+    display: block;
+    width: 100%;
+    height: 50px;
+    font: 14px/50px "HelveticaNeueCyrBold";
+    border: 0;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    background: #009dd4;
+}
+
+.cal_form_col_last{
+    width: 100%;
+    margin-top: 12px;
+    font-size: 13px;
+}
+
+.cal_tabs{
+    margin: 0 -22px;
+}
+
+.cal_tabs_row{
+    padding: 22px;
+}
+
+.cal_tabs_header{
+    height: 50px;
+    padding: 10px 22px 0;
+    background: #ffffff;
+    background: -moz-linear-gradient(top,  #ffffff 0%, #dedede 100%);
+    background: -webkit-linear-gradient(top,  #ffffff 0%,#dedede 100%);
+    background: linear-gradient(to bottom,  #ffffff 0%,#dedede 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#dedede',GradientType=0 );
+}
+
+.cal_tabs .tab{
+    background: none;
+    border: 0;
+}
+
+.cal_tabs .tab a{
+    font: 14px/38px Arial;
+    color: #545454;
+    text-decoration: underline;
+    text-transform: none;
+    padding: 0 30px;
+    height: 38px;
+}
+
+.cal_tabs .tab a:hover{
+    text-decoration: none;
+}
+
+.cal_tabs .tab.active{
+    padding-top: 0;
+    background: #fff;
+    border: 1px solid #bcbcbc;
+    border-bottom: 0;
+    box-shadow: 0 -1px 1px #cccccc;
+    border-radius: 5px 5px 0 0;
+}
+
+.cal_tabs .tab.active a{
+    text-transform: none;
+    text-decoration: none;
+}
+
+.cal_table table{
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.cal_table td{
+    padding: 12px 20px;
+    vertical-align: top;
+    border: 1px solid #c1c1c1;
+}
+
+.cal_table th{
+    font: bold 14px/18px Arial;
+    padding: 18px 20px 12px;
+    vertical-align: top;
+    border: 1px solid #c1c1c1;
+}
+
+.cal_table_img img{
+ border: 1px solid #c1c1c1;
+ max-width: 60px;
+ max-height: 60px;
+ display: block;
+}
+
+.cal_table .cal_table_lastrow td{
+    border: 0;
+}
+
+.cal_table .cal_table_lastrow td:last-child{
+ border: 1px solid #c1c1c1;
+}
+
+.cal_table_input {
+    max-width: 450px;
+}
+
+.cal_table_input .select2-container{
+    width: 100%!important;
+    margin-top: 10px;
+}
+
+.cal_table_input  .select2-container .select2-selection--single{
+    height: 50px;
+    box-shadow: inset 0 0 3px rgba(0,0,0,0.5);
+    border-radius: 0;
+}
+
+.cal_table_input  .select2-container .select2-selection--single .select2-selection__rendered{
+    white-space: normal;
+    overflow: hidden;
+    line-height: 20px;
+    padding-top: 5px;
+    padding-right: 30px;
+}
+
+.cal_table_input  .select2-container--default .select2-selection--single .select2-selection__arrow{
+    height: 50px;
+    width: 30px;
+}
+
+.cal_table_price{
+    font: 13px/17px Arial;
+    text-transform: uppercase;
+}
+
+.cal_table_price b{
+ font:bold 24px/28px Arial;
+}
+
+.cal_table a{
+    color: #df5e00;
+    font: 12px/14px Arial,sans-serif;
+}
+
+.cal_table_lastbtn td{
+    border: 0;
+    padding: 10px 0 0 0;
+}
+
+.cal_table_lastbtn td input{
+    width: 100%;
+    display: block;
+    height: 50px;
+    font: 14px/50px "HelveticaNeueCyrBold";
+    border: 0;
+    text-transform: uppercase;
+    color: #000;
+    padding-left: 30px;
+    text-align: center;
+    background: url("../img/icons/cal_table_cart.png") no-repeat 28px center #ff8d00;
 }
 
 /* .manufacturers_list .news_item:nth-child(2n+1),
@@ -5533,3 +5942,6 @@ select.js-select {
 .b-product-card--table tr:last-child td{
     vertical-align: bottom;
 }
+
+
+/*-------------*

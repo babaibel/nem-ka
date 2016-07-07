@@ -3,16 +3,15 @@
 <head>
     <meta name="viewport" content="width=1060">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <link rel="stylesheet" type="text/css" href="http://nem-ka.ru/assets/e4b8c4b4/css/bootstrap-yii.css" />
-<link rel="stylesheet" type="text/css" href="http://nem-ka.ru/assets/9b11198b/listview/styles.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/e4b8c4b4/css/bootstrap-yii.css" />
 <script type="text/javascript" src="http://nem-ka.ru/assets/931d127/jquery.min.js"></script>
-<script type="text/javascript" src="http://nem-ka.ru/assets/931d127/jquery.ba-bbq.min.js"></script>
 <script type="text/javascript" src="http://nem-ka.ru/assets/e4b8c4b4/js/bootstrap.js"></script>
 <script type="text/javascript" src="js/common.js"></script>
-<title>Ремонтные составы | НеМ.КА</title>
+<script type="text/javascript" src="js/calculate.js"></script>
+<title> Расчет материалов | НеМ.КА</title>
 
-    <meta name="description" content="Купить у компании Нем.Ка Ремонтные составы!"/>
-    <meta name="keywords" content="ремонтные смеси, ремонтная смесь +для бетона, ремонтная смесь +для пола, ремонтные составы, ремонтно восстановительные составы"/>
+    <meta name="description" content=""/>
+    <meta name="keywords" content=""/>
     <meta name='yandex-verification' content='645bc98b95aeb5a6'/>
     <meta name="google-site-verification" content="ISVd1anSHmGNTiZEBItIca3vhmKJCEFBDiFJRMpfAk8"/>
 
@@ -26,7 +25,7 @@
     <link rel="search" type="application/opensearchdescription+xml" href="/osd.xml"
           title="Nem.Ka Maschini"/>
 
-    <link href="http://nem-ka.ru/favicon.ico" rel="icon" type="image/x-icon"/>
+    <link href="/favicon.ico" rel="icon" type="image/x-icon"/>
     <link rel="stylesheet" href="https://cdn.datatables.net/r/dt/dt-1.10.8,fc-3.1.0/datatables.min.css"/>
 
     <link rel="stylesheet" href="css/normalize.css"/>
@@ -35,7 +34,7 @@
     <link rel="stylesheet" type="text/css" href="css/jquery.mCustomScrollbar.css"/>
     <link rel="stylesheet" type="text/css" href="css/select2.css"/>
     <link rel="stylesheet" href="css/styles.css"/>
-    
+
     <script type="text/javascript" src="http://vk.com/js/api/openapi.js?105"></script>
 
     <link href="js/fancyBox-v2.1.5/jquery.fancybox.css" rel="stylesheet" type="text/css">
@@ -50,7 +49,6 @@
     <script type="text/javascript" src="js/mobile-detect.min.js"></script>
     <script type="text/javascript" src="js/select2.js"></script>
     <script src="js/js.js"></script>
-    
     <script src="https://cdn.datatables.net/r/dt/dt-1.10.8,fc-3.1.0/datatables.min.js" type="text/javascript"></script>
 
     <script type="text/javascript">
@@ -77,10 +75,10 @@
                     <li><a href="/faq">Вопрос-ответ</a></li>
                 </ul>
                 <div class="b-basket">
-                    <div class="minicart">
-                        Корзина
-                        пока пуста.
-                    </div>
+                        <div class="minicart">
+    Корзина
+        <a href="/cart" class="basket__price">218.00 руб.</a>
+    </div>
                 </div>
                 <a href="/user/orders/" class="lk-link">
                     <span>Личный кабинет</span>
@@ -106,7 +104,7 @@
                             <input type="submit" class="search-btn">
                         </div>
                         <p class="search-tip">Например:
-                            <a href="javascript:void(0)" class="search-example">правило</a></p>
+                            <a href="javascript:void(0)" class="search-example"></a></p>
                     </form>
                 </div>
                 <div class="b-header__contacts">
@@ -132,7 +130,7 @@
             <!-- BEGIN  wrap-->
             <div class="wrap cleara">
                 <span class="main-menu__title">КАТАЛОГ ТОВАРОВ:</span>
-                <ul class="main-menu">
+<ul class="main-menu">
                 <li class="dropdown">
                 <a href="/catalog/category/stantsii">Оборудование</a>
                                     <div class="main-menu__submenu cleara">
@@ -249,13 +247,13 @@
                             <h2 class="main-menu__submenu-title">производители</h2>
                                                         <ul class="main-menu__submenu-col__right-col">
                                                                     <li>
-                                        <a href="/catalog/category/stantsii?display=manufacturers&manufacturer=27">Uelzener</a>
+                                        <a href="?display=manufacturers&manufacturer=27">Uelzener</a>
                                     </li>
                                                                     <li>
-                                        <a href="/catalog/category/stantsii?display=manufacturers&manufacturer=16">PFT</a>
+                                        <a href="?display=manufacturers&manufacturer=16">PFT</a>
                                     </li>
                                                                     <li>
-                                        <a href="/catalog/category/stantsii?display=manufacturers&manufacturer=8">Kaleta</a>
+                                        <a href="?display=manufacturers&manufacturer=8">Kaleta</a>
                                     </li>
                                                             </ul>
                         </div>
@@ -629,127 +627,106 @@
                             <h2 class="main-menu__submenu-title">производители</h2>
                                                         <ul class="main-menu__submenu-col__right-col">
                                                                     <li>
-                                        <a href="/catalog/category/stroitelnyie_tehnologii_nemka?display=manufacturers&manufacturer=38">Крайзель</a>
+                                        <a href="?display=manufacturers&manufacturer=38">Крайзель</a>
                                     </li>
                                                                     <li>
-                                        <a href="/catalog/category/stroitelnyie_tehnologii_nemka?display=manufacturers&manufacturer=40">Мурексин</a>
+                                        <a href="?display=manufacturers&manufacturer=32">Волма</a>
                                     </li>
                                                                     <li>
-                                        <a href="/catalog/category/stroitelnyie_tehnologii_nemka?display=manufacturers&manufacturer=32">Волма</a>
+                                        <a href="?display=manufacturers&manufacturer=25">Террако</a>
                                     </li>
                                                                     <li>
-                                        <a href="/catalog/category/stroitelnyie_tehnologii_nemka?display=manufacturers&manufacturer=25">Террако</a>
+                                        <a href="?display=manufacturers&manufacturer=37">Киилто Кесто</a>
                                     </li>
                                                                     <li>
-                                        <a href="/catalog/category/stroitelnyie_tehnologii_nemka?display=manufacturers&manufacturer=37">Киилто Кесто</a>
+                                        <a href="?display=manufacturers&manufacturer=47">Бергауф</a>
                                     </li>
                                                                     <li>
-                                        <a href="/catalog/category/stroitelnyie_tehnologii_nemka?display=manufacturers&manufacturer=47">Бергауф</a>
+                                        <a href="?display=manufacturers&manufacturer=19">Quick-Mix </a>
                                     </li>
                                                                     <li>
-                                        <a href="/catalog/category/stroitelnyie_tehnologii_nemka?display=manufacturers&manufacturer=19">Quick-Mix </a>
+                                        <a href="?display=manufacturers&manufacturer=9">Kraftool</a>
                                     </li>
                                                                     <li>
-                                        <a href="/catalog/category/stroitelnyie_tehnologii_nemka?display=manufacturers&manufacturer=9">Kraftool</a>
+                                        <a href="?display=manufacturers&manufacturer=21">Sheetrock</a>
                                     </li>
                                                                     <li>
-                                        <a href="/catalog/category/stroitelnyie_tehnologii_nemka?display=manufacturers&manufacturer=21">Sheetrock</a>
+                                        <a href="?display=manufacturers&manufacturer=48">Кнауф</a>
                                     </li>
                                                                     <li>
-                                        <a href="/catalog/category/stroitelnyie_tehnologii_nemka?display=manufacturers&manufacturer=51">BERGhome</a>
+                                        <a href="?display=manufacturers&manufacturer=52">Gyproc</a>
                                     </li>
                                                                     <li>
-                                        <a href="/catalog/category/stroitelnyie_tehnologii_nemka?display=manufacturers&manufacturer=48">Кнауф</a>
+                                        <a href="?display=manufacturers&manufacturer=56">UNIS</a>
                                     </li>
                                                                     <li>
-                                        <a href="/catalog/category/stroitelnyie_tehnologii_nemka?display=manufacturers&manufacturer=49">Thermomax</a>
+                                        <a href="?display=manufacturers&manufacturer=57">Ceresit</a>
                                     </li>
                                                                     <li>
-                                        <a href="/catalog/category/stroitelnyie_tehnologii_nemka?display=manufacturers&manufacturer=52">Gyproc</a>
+                                        <a href="?display=manufacturers&manufacturer=28">X-GLASS</a>
                                     </li>
                                                                     <li>
-                                        <a href="/catalog/category/stroitelnyie_tehnologii_nemka?display=manufacturers&manufacturer=54">Baulux</a>
+                                        <a href="?display=manufacturers&manufacturer=58">Люмсвет</a>
                                     </li>
                                                                     <li>
-                                        <a href="/catalog/category/stroitelnyie_tehnologii_nemka?display=manufacturers&manufacturer=56">UNIS</a>
+                                        <a href="?display=manufacturers&manufacturer=62">Каменный Цветок</a>
                                     </li>
                                                                     <li>
-                                        <a href="/catalog/category/stroitelnyie_tehnologii_nemka?display=manufacturers&manufacturer=57">Ceresit</a>
+                                        <a href="?display=manufacturers&manufacturer=63">ISOVOL</a>
                                     </li>
                                                                     <li>
-                                        <a href="/catalog/category/stroitelnyie_tehnologii_nemka?display=manufacturers&manufacturer=59">Baumit</a>
+                                        <a href="?display=manufacturers&manufacturer=43">Оптимист</a>
                                     </li>
                                                                     <li>
-                                        <a href="/catalog/category/stroitelnyie_tehnologii_nemka?display=manufacturers&manufacturer=28">X-GLASS</a>
+                                        <a href="?display=manufacturers&manufacturer=65">Старатели</a>
                                     </li>
                                                                     <li>
-                                        <a href="/catalog/category/stroitelnyie_tehnologii_nemka?display=manufacturers&manufacturer=58">Люмсвет</a>
+                                        <a href="?display=manufacturers&manufacturer=66">Основит</a>
                                     </li>
                                                                     <li>
-                                        <a href="/catalog/category/stroitelnyie_tehnologii_nemka?display=manufacturers&manufacturer=61">Dauer</a>
+                                        <a href="?display=manufacturers&manufacturer=67">Weber Venonit</a>
                                     </li>
                                                                     <li>
-                                        <a href="/catalog/category/stroitelnyie_tehnologii_nemka?display=manufacturers&manufacturer=62">Каменный Цветок</a>
+                                        <a href="?display=manufacturers&manufacturer=68">De LUXE</a>
                                     </li>
                                                                     <li>
-                                        <a href="/catalog/category/stroitelnyie_tehnologii_nemka?display=manufacturers&manufacturer=63">ISOVOL</a>
+                                        <a href="?display=manufacturers&manufacturer=69">Глимс</a>
                                     </li>
                                                                     <li>
-                                        <a href="/catalog/category/stroitelnyie_tehnologii_nemka?display=manufacturers&manufacturer=43">Оптимист</a>
+                                        <a href="?display=manufacturers&manufacturer=64">Артель</a>
                                     </li>
                                                                     <li>
-                                        <a href="/catalog/category/stroitelnyie_tehnologii_nemka?display=manufacturers&manufacturer=65">Старатели</a>
+                                        <a href="?display=manufacturers&manufacturer=74">Индастро</a>
                                     </li>
                                                                     <li>
-                                        <a href="/catalog/category/stroitelnyie_tehnologii_nemka?display=manufacturers&manufacturer=66">Основит</a>
+                                        <a href="?display=manufacturers&manufacturer=75">Icopal</a>
                                     </li>
                                                                     <li>
-                                        <a href="/catalog/category/stroitelnyie_tehnologii_nemka?display=manufacturers&manufacturer=67">Weber Venonit</a>
+                                        <a href="?display=manufacturers&manufacturer=76">Стройбриг</a>
                                     </li>
                                                                     <li>
-                                        <a href="/catalog/category/stroitelnyie_tehnologii_nemka?display=manufacturers&manufacturer=68">De LUXE</a>
+                                        <a href="?display=manufacturers&manufacturer=80">Кнауф АМФ</a>
                                     </li>
                                                                     <li>
-                                        <a href="/catalog/category/stroitelnyie_tehnologii_nemka?display=manufacturers&manufacturer=69">Глимс</a>
+                                        <a href="?display=manufacturers&manufacturer=80">Кнауф АМФ подвесные системы</a>
                                     </li>
                                                                     <li>
-                                        <a href="/catalog/category/stroitelnyie_tehnologii_nemka?display=manufacturers&manufacturer=71">Litokol</a>
+                                        <a href="?display=manufacturers&manufacturer=80">Потолок АМФ стандартные поверхности</a>
                                     </li>
                                                                     <li>
-                                        <a href="/catalog/category/stroitelnyie_tehnologii_nemka?display=manufacturers&manufacturer=64">Артель</a>
+                                        <a href="?display=manufacturers&manufacturer=80">Потолок АМФ Чистота и Гигиена</a>
                                     </li>
                                                                     <li>
-                                        <a href="/catalog/category/stroitelnyie_tehnologii_nemka?display=manufacturers&manufacturer=74">Индастро</a>
+                                        <a href="?display=manufacturers&manufacturer=80">Потолок АМФ Акустика</a>
                                     </li>
                                                                     <li>
-                                        <a href="/catalog/category/stroitelnyie_tehnologii_nemka?display=manufacturers&manufacturer=75">Icopal</a>
+                                        <a href="?display=manufacturers&manufacturer=81">Албес</a>
                                     </li>
                                                                     <li>
-                                        <a href="/catalog/category/stroitelnyie_tehnologii_nemka?display=manufacturers&manufacturer=76">Стройбриг</a>
+                                        <a href="?display=manufacturers&manufacturer=81">Комплектующие для подвесных потолков</a>
                                     </li>
                                                                     <li>
-                                        <a href="/catalog/category/stroitelnyie_tehnologii_nemka?display=manufacturers&manufacturer=80">Кнауф АМФ</a>
-                                    </li>
-                                                                    <li>
-                                        <a href="/catalog/category/stroitelnyie_tehnologii_nemka?display=manufacturers&manufacturer=80">Кнауф АМФ подвесные системы</a>
-                                    </li>
-                                                                    <li>
-                                        <a href="/catalog/category/stroitelnyie_tehnologii_nemka?display=manufacturers&manufacturer=80">Потолок АМФ стандартные поверхности</a>
-                                    </li>
-                                                                    <li>
-                                        <a href="/catalog/category/stroitelnyie_tehnologii_nemka?display=manufacturers&manufacturer=80">Потолок АМФ Чистота и Гигиена</a>
-                                    </li>
-                                                                    <li>
-                                        <a href="/catalog/category/stroitelnyie_tehnologii_nemka?display=manufacturers&manufacturer=80">Потолок АМФ Акустика</a>
-                                    </li>
-                                                                    <li>
-                                        <a href="/catalog/category/stroitelnyie_tehnologii_nemka?display=manufacturers&manufacturer=81">Албес</a>
-                                    </li>
-                                                                    <li>
-                                        <a href="/catalog/category/stroitelnyie_tehnologii_nemka?display=manufacturers&manufacturer=81">Комплектующие для подвесных потолков</a>
-                                    </li>
-                                                                    <li>
-                                        <a href="/catalog/category/stroitelnyie_tehnologii_nemka?display=manufacturers&manufacturer=82">ПСА</a>
+                                        <a href="?display=manufacturers&manufacturer=82">ПСА</a>
                                     </li>
                                                             </ul>
                         </div>
@@ -994,31 +971,31 @@
                             <h2 class="main-menu__submenu-title">производители</h2>
                                                         <ul class="main-menu__submenu-col__right-col">
                                                                     <li>
-                                        <a href="/catalog/category/instrument?display=manufacturers&manufacturer=32">Волма</a>
+                                        <a href="?display=manufacturers&manufacturer=32">Волма</a>
                                     </li>
                                                                     <li>
-                                        <a href="/catalog/category/instrument?display=manufacturers&manufacturer=25">Террако</a>
+                                        <a href="?display=manufacturers&manufacturer=25">Террако</a>
                                     </li>
                                                                     <li>
-                                        <a href="/catalog/category/instrument?display=manufacturers&manufacturer=17">PROTOOL</a>
+                                        <a href="?display=manufacturers&manufacturer=17">PROTOOL</a>
                                     </li>
                                                                     <li>
-                                        <a href="/catalog/category/instrument?display=manufacturers&manufacturer=5">FESTOOL</a>
+                                        <a href="?display=manufacturers&manufacturer=5">FESTOOL</a>
                                     </li>
                                                                     <li>
-                                        <a href="/catalog/category/instrument?display=manufacturers&manufacturer=42">Олейник Профи</a>
+                                        <a href="?display=manufacturers&manufacturer=42">Олейник Профи</a>
                                     </li>
                                                                     <li>
-                                        <a href="/catalog/category/instrument?display=manufacturers&manufacturer=9">Kraftool</a>
+                                        <a href="?display=manufacturers&manufacturer=9">Kraftool</a>
                                     </li>
                                                                     <li>
-                                        <a href="/catalog/category/instrument?display=manufacturers&manufacturer=23">Stayer</a>
+                                        <a href="?display=manufacturers&manufacturer=23">Stayer</a>
                                     </li>
                                                                     <li>
-                                        <a href="/catalog/category/instrument?display=manufacturers&manufacturer=36">Зубр</a>
+                                        <a href="?display=manufacturers&manufacturer=36">Зубр</a>
                                     </li>
                                                                     <li>
-                                        <a href="/catalog/category/instrument?display=manufacturers&manufacturer=73">Makita</a>
+                                        <a href="?display=manufacturers&manufacturer=73">Makita</a>
                                     </li>
                                                             </ul>
                         </div>
@@ -1217,16 +1194,19 @@
                             <h2 class="main-menu__submenu-title">производители</h2>
                                                         <ul class="main-menu__submenu-col__right-col">
                                                                     <li>
-                                        <a href="/catalog/category/zapchasti_i_rashodniki?display=manufacturers&manufacturer=10">KTO</a>
+                                        <a href="?display=manufacturers&manufacturer=10">KTO</a>
                                     </li>
                                                                     <li>
-                                        <a href="/catalog/category/zapchasti_i_rashodniki?display=manufacturers&manufacturer=27">Uelzener</a>
+                                        <a href="?display=manufacturers&manufacturer=27">Uelzener</a>
                                     </li>
                                                                     <li>
-                                        <a href="/catalog/category/zapchasti_i_rashodniki?display=manufacturers&manufacturer=16">PFT</a>
+                                        <a href="?display=manufacturers&manufacturer=16">PFT</a>
                                     </li>
                                                                     <li>
-                                        <a href="/catalog/category/zapchasti_i_rashodniki?display=manufacturers&manufacturer=8">Kaleta</a>
+                                        <a href="?display=manufacturers&manufacturer=8">Kaleta</a>
+                                    </li>
+                                                                    <li>
+                                        <a href="?display=manufacturers&manufacturer=79">Беламос</a>
                                     </li>
                                                             </ul>
                         </div>
@@ -1259,829 +1239,603 @@
         <!-- END  header-->
 
         <div class="layout__main-content">
-            <div class="layout__main-content">
-    <!-- BEGIN  wrap-->
-    <div class="wrap">
-        <div class="layout__inner-page">
-            <div class="inner-page__left-col">
-                <div class="sidebar-block">
-    <h3 class="sidebar-block__title bordered-title">Каталог товаров</h3>
-    <ul class="sidebar-block__menu">
-                    <li ><a href="/catalog/category/stantsii">
-                    Оборудование</a>
-                            </li>
-                    <li class="active"><a href="/catalog/category/stroitelnyie_tehnologii_nemka">
-                    Строительные материалы и технологии </a>
-                                        <ul class="sidebar-block__menu">
-                                                                <li >
-                                        <a href="/catalog/category/montajnyie_smesi">
-                                            Кладочные и монтажные смеси</a>
-                                                                            </li>
-                                                                    <li >
-                                        <a href="/catalog/category/shpatlvki">
-                                            Шпатлёвки</a>
-                                                                            </li>
-                                                                    <li >
-                                        <a href="/catalog/category/gruntovanie">
-                                            Грунтовки и набрызги</a>
-                                                                            </li>
-                                                                    <li >
-                                        <a href="/catalog/category/pesko_beton_tsement">
-                                            Пескобетон, цемент</a>
-                                                                            </li>
-                                                                    <li >
-                                        <a href="/catalog/category/mashinnyie_shtukaturki">
-                                            Штукатурки машинного, ручного нанесения</a>
-                                                                            </li>
-                                                                    <li >
-                                        <a href="/catalog/category/smesi_dlya_ustroystva_pola">
-                                            Наливные полы. Ровнители. Стяжки </a>
-                                                                            </li>
-                                                                    <li >
-                                        <a href="/catalog/category/sistemyi_plitochnoy_oblitsovki">
-                                            Плиточный клей и затирки</a>
-                                                                            </li>
-                                                                    <li >
-                                        <a href="/catalog/category/fasadnyiy_kley_i_armirovanie">
-                                            Фасадный клей и армирование</a>
-                                                                            </li>
-                                                                    <li >
-                                        <a href="/catalog/category/dekorativnyie_shtukaturki">
-                                            Декоративная штукатурка и покрытия</a>
-                                                                            </li>
-                                                                    <li >
-                                        <a href="/catalog/category/kraski">
-                                            Краски интерьерные и фасадные</a>
-                                                                            </li>
-                                                                    <li >
-                                        <a href="/catalog/category/komplektuyuschie">
-                                            Комплектующие</a>
-                                                                            </li>
-                                                                    <li >
-                                        <a href="/catalog/category/fasadyi">
-                                            Фасадные системы</a>
-                                                                            </li>
-                                                                    <li >
-                                        <a href="/catalog/category/teplo__i_zvukoizolyatsiya">
-                                            Тепло- и звукоизоляция</a>
-                                                                            </li>
-                                                                    <li >
-                                        <a href="/catalog/category/akvapanel">
-                                            Аквапанель</a>
-                                                                            </li>
-                                                                    <li >
-                                        <a href="/catalog/category/gipsovolokno_gipsokarton">
-                                            Гипсоволокно </a>
-                                                                            </li>
-                                                                    <li >
-                                        <a href="/catalog/category/gipsokarton">
-                                            Гипсокартон</a>
-                                                                            </li>
-                                                                    <li >
-                                        <a href="/catalog/category/pazogrebnevyie_plityi">
-                                            Пазогребневые плиты</a>
-                                                                            </li>
-                                                                    <li >
-                                        <a href="/catalog/category/profil_dlya_gipsokartona_gipsovolokna_gkl_gvl_napravlyayuschiy_potolochnyiy_stoechnyiy">
-                                            Профиль для гипсокартона/гипсоволокна (гкл/гвл): направляющий, потолочный, стоечный</a>
-                                                                            </li>
-                                                                    <li >
-                                        <a href="/catalog/category/kley_dlya_gipsokartona">
-                                            Клей для гипсокартона</a>
-                                                                            </li>
-                                                                    <li >
-                                        <a href="/catalog/category/komplektuyuschie_dlya_profilya">
-                                            Комплектующие для профиля</a>
-                                                                            </li>
-                                                                    <li >
-                                        <a href="/catalog/category/gidroizolyatsii">
-                                            Гидроизоляция</a>
-                                                                            </li>
-                                                                    <li class="active">
-                                        <a href="/catalog/category/remontnyie_sostavyi">
-                                            Ремонтные составы</a>
-                                                                                                                    </li>
-                                                                    <li >
-                                        <a href="/catalog/category/penyi_i_germetiki">
-                                            Пены и герметики</a>
-                                                                            </li>
-                                                                    <li >
-                                        <a href="/catalog/category/podvesnyie_potolki">
-                                            Подвесные потолки</a>
-                                                                            </li>
-                                                        </ul>
-                                                </li>
-                    <li ><a href="/catalog/category/instrument">
-                    Инструмент</a>
-                            </li>
-                    <li ><a href="/catalog/category/zapchasti_i_rashodniki">
-                    Запчасти и расходники</a>
-                            </li>
-                    <li ><a href="/catalog/category/proizvoditeli">
-                    Производители</a>
-                            </li>
-                    <li ><a href="/catalog/category/arenda_shtukaturnoy_stantsii">
-                    Аренда </a>
-                            </li>
-                    <li ><a href="/catalog/category/remont_shtukaturnyih_stantsiy_i_mashin_diagnostika_i_obslujivanie_za_24_chasa">
-                    Ремонт </a>
-                            </li>
-                    <li ><a href="/catalog/category/aktsii">
-                    Акции</a>
-                            </li>
-                    <li ><a href="/catalog/category/vnedrenie_tehnologiy">
-                    Обучение</a>
-                            </li>
-            </ul>
-    <a href="http://forum.nem-ka.ru/" target="_blank"
-       class="sidebar-block__btn proff"><span>мнения профессионалов</span></a>
-    <a href="/library" class="sidebar-block__btn library"><span>библиотека знаний</span></a>
-    <a href="javascript:void(0)"
-       onclick="$.fancybox({content:$('#inline2').html(),helpers: {overlay: {locked: false}}})"
-       class="sidebar-block__btn download"><span>скачать прайс-лист</span></a>
+            <div class="wrap">
+    <h2 class="h2-inner-page__title">Рассчитать систему подвесного потолка</h2>
 
-</div>
-<div style="display:none">
-    <div id="inline2">
-        <table cellpadding="5" border="0" align="center" width="600">
-            <tr>
-                <td colspan="3">
-                    <div class="icon-pdf-go">Строительные материалы и технологии</div>
-                </td>
-                <td colspan="3">
-                    <div class="icon-pdf-go">Станции</div>
-                </td>
-            </tr>
-            <tr>
-                <td><a href="/files/generated/price-stroitelnyie_tehnologii_nemka.pdf" target="_blank">Открыть</a></td>
-                <td><a href="/files/generated/price-stroitelnyie_tehnologii_nemka.pdf" class="download">Скачать</a></td>
-                <td><a href="/catalog/category/stantsii?display=pdf&category=stroitelnyie_tehnologii_nemka&html=true"
-                       class="print">Печатать</a></td>
+    <div class="cal_info">
+        <div class="cal_info_img">
+            <img src="http://nem-ka.ru/images/Product/cache/Thermatex_Acoustic_RUSS_218x191.jpg"
+                 alt="Плита АМФ Thermatex Acoustic Терматекс Акустик белый марки АМФ Кнауф"
+                 title="Плита АМФ Thermatex Acoustic Терматекс Акустик белый марки АМФ Кнауф"/>
+        </div>
+        <div class="cal_info_col">
+            <p><a href="/catalog/product/plita_amf_thermatex_acoustic_termateks_akustik_belyiy_marki_amf_knauf" target="_blank">
+                    Плита АМФ Thermatex Acoustic Терматекс Акустик белый марки АМФ Кнауф                </a></p>
 
-                <td><a href="/files/generated/price-stantsii.pdf" target="_blank">Открыть</a></td>
-                <td><a href="/files/generated/price-stantsii.pdf" class="download">Скачать</a></td>
-                <td><a href="/catalog/category/stantsii?display=pdf&category=stantsii&html=true"
-                       class="print">Печатать</a>
-                </td>
-            </tr>
-            <tr>
-                <td colspan="6">
-                    <hr>
-                </td>
-            </tr>
-
-            <tr>
-                <td colspan="3">
-                    <div class="icon-pdf-go">Запчасти и расходники</div>
-                </td>
-                <td colspan="3">
-                    <div class="icon-pdf-go">Инструмент</div>
-                </td>
-            </tr>
-            <tr>
-                <td><a href="/files/generated/price-zapchasti_i_rashodniki.pdf" target="_blank">Открыть</a></td>
-                <td><a href="/files/generated/price-zapchasti_i_rashodniki.pdf" class="download">Скачать</a></td>
-                <td><a href="/catalog/category/stantsii?display=pdf&category=zapchasti_i_rashodniki&html=true"
-                       class="print">Печатать</a></td>
-                <td><a href="/files/generated/price-instrument.pdf" target="_blank">Открыть</a></td>
-                <td><a href="/files/generated/price-instrument.pdf" class="download">Скачать</a></td>
-                <td><a href="/catalog/category/stantsii?display=pdf&category=instrument&html=true" class="print">Печатать</a>
-                </td>
-            </tr>
-            <tr>
-                <td colspan="6">
-                    <hr>
-                </td>
-            </tr>
-            <tr>
-                <td colspan="6">
-                    <div class="icon-pdf-go">Комплектация строительных объектов</div>
-                </td>
-            </tr>
-            <tr>
-                <td><a href="/files/generated/price-komplektatsiya_stroitelnyih_obyektov.pdf"
-                       target="_blank">Открыть</a></td>
-                <td><a href="/files/generated/price-komplektatsiya_stroitelnyih_obyektov.pdf"
-                       class="download">Скачать</a></td>
-                <td>
-                    <a href="/catalog/category/stantsii?display=pdf&category=komplektatsiya_stroitelnyih_obyektov&html=true"
-                       class="print">Печатать</a></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-        </table>
+            <p style="font-size: 16px;">
+                 Цена за м2 - <b>916.09 руб.</b>
+                            </p>
+        </div>
     </div>
-</div>                        <div class="sidebar-block">
-            <h3 class="sidebar-block__title">популярные товары</h3>
-                            <div class="sidebar-block_item">
-                    <div class="sidebar-block_item_img">
-                        <img
-                            src="http://nem-ka.ru/images/Product/cache/6bc59f6e377e1e07fb19e77b70581915_144x117.jpg"
-                            alt="Штукатурка финишная тонкослойная выравнивающая Terraco ТЕРРАМИКС гладкий белый  марки Террако" title="Штукатурка финишная тонкослойная выравнивающая Terraco ТЕРРАМИКС гладкий белый  марки Террако"/>
-                    </div>
-                    <div class="sidebar-block_item_text">
-                        <a href="/catalog/product/terramiks_gladkiy__finishnaya_vyiravnivayuschaya___shtukaturka_terrako">
-                            Штукатурка финишная тонкослойная выравнивающая Terraco ТЕРРАМИКС гладкий белый  марки Террако                        </a>
-                        <span class="sidebar-block_item_price">
-                            672.98 руб.
-                        </span>
-                    </div>
+
+    <div class="cal_form">
+        <form method="post" action="/catalog/calculateCeilings/1280" name="calculate">
+            <div class="cal_form_col cal_form_col-long">
+                <p class="cal_form_col_title">Выберите тип:</p>
+
+                <div class="cal_form_col_input">
+                    <select class="js-select" name="parent_id">
+                        <option
+                            value="1280"                             data-original_price="3297.924"
+                            data-prefix="м2"
+                            data-price="916.09"
+                            data-id="1280">Плита АМФ Thermatex Acoustic Терматекс Акустик белый марки АМФ Кнауф </option>
+                                                                                            <option value="7898"
+                                                                                    data-original_price="3297.92"
+                                            data-prefix="м2"
+                                            data-price="916.09"
+                                            data-id="7898">Терматекс Акустик SK белый 600*600*19мм, 10 шт/уп.,5 кг, </option>
+                                                                    <option value="7899"
+                                        selected                                            data-original_price="3592.58"
+                                            data-prefix="м2"
+                                            data-price="997.94"
+                                            data-id="7899">Терматекс Акустик SK RL белый 600*600*19мм, 10 шт/уп.,5 кг, </option>
+                                                                    <option value="7900"
+                                                                                    data-original_price="4303.53"
+                                            data-prefix="м2"
+                                            data-price="1494.28"
+                                            data-id="7900">Терматекс Акустик SF белый 600*600*24мм, 8 шт/уп,5 кг, </option>
+                                                                    <option value="7901"
+                                                                                    data-original_price="4668.44"
+                                            data-prefix="м2"
+                                            data-price="1296.79"
+                                            data-id="7901">Терматекс Акустик AW/GN белый 600*600*19мм,10 шт/уп.,5 кг, </option>
+                                                                    <option value="7902"
+                                                                                    data-original_price="3852.07"
+                                            data-prefix="м2"
+                                            data-price="1070.02"
+                                            data-id="7902">Терматекс Акустик VT 15 белый 600*600*19мм, 10 шт/уп.,5 кг, </option>
+                                                                    <option value="7903"
+                                                                                    data-original_price="3852.07"
+                                            data-prefix="м2"
+                                            data-price="1070.02"
+                                            data-id="7903">Терматекс Акустик VT 24 белый 600*600*19мм, 10 шт/уп.,5 кг, </option>
+                                                                    <option value="7904"
+                                                                                    data-original_price="3852.07"
+                                            data-prefix="м2"
+                                            data-price="1070.02"
+                                            data-id="7904">Терматекс Акустик VT-S 15 белый 600*600*19мм, 10 шт/уп.,5 кг, </option>
+                                                                    <option value="7905"
+                                                                                    data-original_price="4098.06"
+                                            data-prefix="м2"
+                                            data-price="1138.35"
+                                            data-id="7905">Терматекс Акустик VT-S 24 RL белый 600*600*19мм, 10 шт/уп.,5 кг, </option>
+                                                                    <option value="7906"
+                                                                                    data-original_price="4098.06"
+                                            data-prefix="м2"
+                                            data-price="1138.35"
+                                            data-id="7906">Терматекс Акустик VT-S15 RL белый 600*600*19мм,10 шт/уп.,5 кг, </option>
+                                                                                </select>
                 </div>
-                    </div>
+            </div>
+            <div class="cal_form_col">
+                <p class="cal_form_col_title">Ширина помещения (м):</p>
+
+                <div class="cal_form_col_input">
+                    <input type="text" name="x" value="124" data-vtype="digit"/>
                 </div>
-            <div class="inner-page__right-col">
-                <div class="breadcrumbs">
-                    <div class="breadcrumbs">
-                        <a href="/" class="breadcrumbs__item">Главная</a><span class="breadcrumbs__separate"></span><a href="/catalog/category/stroitelnyie_tehnologii_nemka" class="breadcrumbs__item">Строительные материалы и технологии </a><span class="breadcrumbs__separate"></span><span class="breadcrumbs__selected">Ремонтные составы</span>
-                    </div>                
+            </div>
+            <div class="cal_form_col">
+                <p class="cal_form_col_title">Длина помещения (м):</p>
+
+                <div class="cal_form_col_input">
+                    <input type="text" value="56" data-vtype="digit" name="y"/>
                 </div>
-                <h2 class="h2-inner-page__title">Ремонтные составы</h2>
-                
-                <div class="catalog_folders">
-                    <div class="catalog_folders_header">
-                        <ul>
-                            <li class="active">
-                                <a href="/catalog/category/remontnyie_sostavyi">
-                                    Все товары
-                                </a>
-                            </li>
-                            <li >
-                                <a href="/catalog/category/remontnyie_sostavyi?display=manufacturers">
-                                    По производителям
-                                </a>
-                            </li>
-                                            <li >
-                                    <a href="/catalog/category/remontnyie_sostavyi?display=ntype">
-                                        По типу нанесения
-                                    </a>
-                                </li>
-                                        <li >
-                                <a href="/catalog/category/remontnyie_sostavyi?display=alph">
-                                    По алфавиту
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="catalog_folders_content">
-                        <ul>
+            </div>
+            <div class="cal_form_col cal_form_col-long2 ">
+                <input type="submit" value="РАССЧИТАТЬ КОМПЛЕКТ" style="background-color: #ff8d00">
+            </div>
+            <div class="cal_form_col cal_form_col_last">Цена выбранной плиты за
+                <span id="prefix"></span> - <b id="price"></b>
+            </div>
+        </form>
+    </div>
+            <h2 class="h2_title_blue">Выберите оптимальный для Вас комплект</h2>
+
+        <div class="cal_tabs">
+            <div class="" id="cal_tabs">
+                <ul class='etabs cal_tabs_row cal_tabs_header'>
+                                            <li class='tab'><a href="#tabs3-0">Система Т-24</a></li>
+                                            <li class='tab'><a href="#tabs3-1">Система Т-15</a></li>
                                     </ul>
-                    </div>
-                </div>
+                <div class="cal_tabs_row">
+                                            <div id="tabs3-0">
+                            <form name="kitBox-7" method="post">
+                                <input type="hidden" name="x" value="124"/>
+                                <input type="hidden" name="y" value="56"/>
+                                <input type="hidden" name="parent_id" value="7899"/>
 
-                <div class="catalog_properties">
-                    <div class="catalog_properties_param">
-                        <a href="javascript:void(0)">подбор по параметрам</a>
+                                <div class="cal_table">
+                                    <table>
+                                        <tr>
+                                            <th width="90px"></th>
+                                            <th>Наименование</th>
+                                            <th width="100px" align="center">Кол-во</th>
+                                            <th width="130px">Цена</th>
+                                            <th width="150px">Сумма</th>
+                                        </tr>
 
-                        <div class="catalog_properties_params">
-                            <form>
-                                <input type="hidden" name="category_ids" value="181,1">
-                                <table>
-                                                            <tr data-sort="1">
-                                        <td>Связующие:</td>
-                                        <td>
-                                            <select class="js-select select_b w340"
-                                                    data-action="parameters"
-                                                    data-category_id="181,1"
-                                                    name="parameters[4918]"
-                                                >
-                                                <option value="0">не выбрано</option>
-                                                                                        <option value="Гидравлические и органические связующие">Гидравлические и органические связующие</option>
-                                                                                </select>
-                                        </td>
-                                                                <tr data-sort="5">
-                                        <td>Усилие на сжатие:</td>
-                                        <td>
-                                            <select class="js-select select_b w340"
-                                                    data-action="parameters"
-                                                    data-category_id="181,1"
-                                                    name="parameters[4922]"
-                                                >
-                                                <option value="0">не выбрано</option>
-                                                                                        <option value="285 кПа/см²">285 кПа/см²</option>
-                                                                                </select>
-                                        </td>
-                                                                <tr data-sort="4">
-                                        <td>Усилие на разрыв / отрыв:</td>
-                                        <td>
-                                            <select class="js-select select_b w340"
-                                                    data-action="parameters"
-                                                    data-category_id="181,1"
-                                                    name="parameters[4921]"
-                                                >
-                                                <option value="0">не выбрано</option>
-                                                                                        <option value="105 кПа/см²">105 кПа/см²</option>
-                                                                                </select>
-                                        </td>
-                                                                <tr data-sort="6">
-                                        <td>Толщина слоя:</td>
-                                        <td>
-                                            <select class="js-select select_b w340"
-                                                    data-action="parameters"
-                                                    data-category_id="181,1"
-                                                    name="parameters[4923]"
-                                                >
-                                                <option value="0">не выбрано</option>
-                                                                                        <option value="макс.2 мм.">макс.2 мм.</option>
-                                                                                </select>
-                                        </td>
-                                                                </tr>
-                                </table>
-                                <div class="catalog_properties_params_fin">
-                                    <input class="big_orange_btn" type="submit" name="" value="применить">
-                                    <input class="big_blue_btn" type="submit" value="сбросить" name="">
-                                                    <span
-                                                        class="catalog_properties_params_res">Найдено: <span
-                                                            id="result_search">0</span> товаров</span>
+                                                                                        <input type="hidden" name="ids[]" value="1280"
+                                                       data-parent_id="1280"/>
+                                                <input type="hidden" name="quantity[1280]"
+                                                       data-parent_id="1280"
+                                                       value="1931"/>
+
+                                                <tr data-parent_id="1280">
+                                                    <td class="cal_table_img">
+                                                        <img
+                                                            src="http://nem-ka.ru/images/Product/cache/Thermatex_Acoustic_RUSS_218x191.jpg"
+                                                            alt="Плита АМФ Thermatex Acoustic Терматекс Акустик белый марки АМФ Кнауф"
+                                                            title="Плита АМФ Thermatex Acoustic Терматекс Акустик белый марки АМФ Кнауф">
+                                                    </td>
+                                                    <td>
+                                                        <a href="/catalog/product/plita_amf_thermatex_acoustic_termateks_akustik_belyiy_marki_amf_knauf"
+                                                           target="_blank">
+                                                            Терматекс Акустик SK белый 600*600*19мм, 10 шт/уп.</a>
+                                                                                                            </td>
+                                                    <td align="center">1931</td>
+                                                    <td>3 297,92                                                        руб.
+                                                    </td>
+                                                    <td>6 368 292,00                                                        руб.
+                                                    </td>
+                                                </tr>
+                                                                                            <input type="hidden" name="ids[]" value="1284"
+                                                       data-parent_id="1284"/>
+                                                <input type="hidden" name="quantity[1284]"
+                                                       data-parent_id="1284"
+                                                       value="444"/>
+
+                                                <tr data-parent_id="1284">
+                                                    <td class="cal_table_img">
+                                                        <img
+                                                            src="http://nem-ka.ru/images/Product/cache/24__ventatec_gl_prof_218x191.jpg"
+                                                            alt="Несущая направляющая (профиль) каркаса «Knauf AMF» Ventatec T-24, 3.6 м для подвесных потолков"
+                                                            title="Несущая направляющая (профиль) каркаса «Knauf AMF» Ventatec T-24, 3.6 м для подвесных потолков">
+                                                    </td>
+                                                    <td>
+                                                        <a href="/catalog/product/glavnyiy_profil_karkasa_knauf_amf_ventatec_t_24_36_m_dlya_podvesnyih_potolkov"
+                                                           target="_blank">
+                                                            Несущая направляющая (профиль) каркаса «Knauf AMF» Ventatec T-24, 3.6 м для подвесных потолков</a>
+                                                                                                            </td>
+                                                    <td align="center">444</td>
+                                                    <td>207,00                                                        руб.
+                                                    </td>
+                                                    <td>91 908,00                                                        руб.
+                                                    </td>
+                                                </tr>
+                                                                                            <input type="hidden" name="ids[]" value="1295"
+                                                       data-parent_id="1295"/>
+                                                <input type="hidden" name="quantity[1295]"
+                                                       data-parent_id="1295"
+                                                       value="5792"/>
+
+                                                <tr data-parent_id="1295">
+                                                    <td class="cal_table_img">
+                                                        <img
+                                                            src="http://nem-ka.ru/images/Product/cache/ventatec_poperpf_24_1_2_218x191.jpg"
+                                                            alt="Поперечная направляющая  (профиль) каркаса Knauf AMF Ventatec Т-24 для подвесных потолков марки АМФ Кнауф"
+                                                            title="Поперечная направляющая  (профиль) каркаса Knauf AMF Ventatec Т-24 для подвесных потолков марки АМФ Кнауф">
+                                                    </td>
+                                                    <td>
+                                                        <a href="/catalog/product/poperechnyiy_profil_karkasa_knauf_amf_ventatec_t_24_dlya_podvesnyih_potolkov_marki_amf_knauf"
+                                                           target="_blank">
+                                                            Поперечный профиль Т-24, L= 0,6м., 36 м.п./60 шт/уп.</a>
+                                                                                                            </td>
+                                                    <td align="center">5792</td>
+                                                    <td>34,50                                                        руб.
+                                                    </td>
+                                                    <td>199 824,00                                                        руб.
+                                                    </td>
+                                                </tr>
+                                                                                            <input type="hidden" name="ids[]" value="1295"
+                                                       data-parent_id="1295"/>
+                                                <input type="hidden" name="quantity[1295]"
+                                                       data-parent_id="1295"
+                                                       value="8045"/>
+
+                                                <tr data-parent_id="1295">
+                                                    <td class="cal_table_img">
+                                                        <img
+                                                            src="http://nem-ka.ru/images/Product/cache/ventatec_poperpf_24_1_2_218x191.jpg"
+                                                            alt="Поперечная направляющая  (профиль) каркаса Knauf AMF Ventatec Т-24 для подвесных потолков марки АМФ Кнауф"
+                                                            title="Поперечная направляющая  (профиль) каркаса Knauf AMF Ventatec Т-24 для подвесных потолков марки АМФ Кнауф">
+                                                    </td>
+                                                    <td>
+                                                        <a href="/catalog/product/poperechnyiy_profil_karkasa_knauf_amf_ventatec_t_24_dlya_podvesnyih_potolkov_marki_amf_knauf"
+                                                           target="_blank">
+                                                            Поперечный профиль Т-24, L=1.2,м., 72 м.п./60 шт/уп.</a>
+                                                                                                            </td>
+                                                    <td align="center">8045</td>
+                                                    <td>34,50                                                        руб.
+                                                    </td>
+                                                    <td>555 105,00                                                        руб.
+                                                    </td>
+                                                </tr>
+                                                                                            <input type="hidden" name="ids[]" value="1286"
+                                                       data-parent_id="1286"/>
+                                                <input type="hidden" name="quantity[1286]"
+                                                       data-parent_id="1286"
+                                                       value="120"/>
+
+                                                <tr data-parent_id="1286">
+                                                    <td class="cal_table_img">
+                                                        <img
+                                                            src="http://nem-ka.ru/images/Product/cache/VENTATEC-16_218x191.jpg"
+                                                            alt="Уголок пристенный для подвесных потолков Ventatec 19/24 L = 3000 мм марки АМФ Кнауф"
+                                                            title="Уголок пристенный для подвесных потолков Ventatec 19/24 L = 3000 мм марки АМФ Кнауф">
+                                                    </td>
+                                                    <td>
+                                                        <a href="/catalog/product/ugolok_pristennyiy_ventatec_19_24_i_24_24_l__3000_mm_marki_amf_knauf"
+                                                           target="_blank">
+                                                            Уголок пристенный для подвесных потолков Ventatec 19/24 L = 3000 мм марки АМФ Кнауф</a>
+                                                                                                            </td>
+                                                    <td align="center">120</td>
+                                                    <td>198,24                                                        руб.
+                                                    </td>
+                                                    <td>23 788,80                                                        руб.
+                                                    </td>
+                                                </tr>
+                                                                                            <input type="hidden" name="ids[]" value="1287"
+                                                       data-parent_id="1287"/>
+                                                <input type="hidden" name="quantity[1287]"
+                                                       data-parent_id="1287"
+                                                       value="4861"/>
+
+                                                <tr data-parent_id="1287">
+                                                    <td class="cal_table_img">
+                                                        <img
+                                                            src="http://nem-ka.ru/images/Product/cache/podvesi-_alfa_v_218x191.jpg"
+                                                            alt="Комплект подвесов  для подвесного потолка Альфа-V марки ПСА"
+                                                            title="Комплект подвесов  для подвесного потолка Альфа-V марки ПСА">
+                                                    </td>
+                                                    <td>
+                                                        <a href="/catalog/product/komplekt_podvesov__dlya_podvesnogo_potolka_alfa_v_marki_psa"
+                                                           target="_blank">
+                                                            Комплект подвесов 'Альфа-V' 0,5 м</a>
+                                                                                                            </td>
+                                                    <td align="center">4861</td>
+                                                    <td>5,11                                                        руб.
+                                                    </td>
+                                                    <td>24 839,71                                                        руб.
+                                                    </td>
+                                                </tr>
+                                                                                            <input type="hidden" name="ids[]" value="1292"
+                                                       data-parent_id="1292"/>
+                                                <input type="hidden" name="quantity[1292]"
+                                                       data-parent_id="1292"
+                                                       value="4792"/>
+
+                                                <tr data-parent_id="1292">
+                                                    <td class="cal_table_img">
+                                                        <img
+                                                            src="http://nem-ka.ru/images/Product/cache/anker_klin_s_yhom_218x191.jpg"
+                                                            alt="Анкер-клин с &#039;ухом&#039; WAM 6/60 для крепежа подвесных потолков"
+                                                            title="Анкер-клин с &#039;ухом&#039; WAM 6/60 для крепежа подвесных потолков">
+                                                    </td>
+                                                    <td>
+                                                        <a href="/catalog/product/anker_klin_s_uhom_wam_6_60_dlya_krepeja_podvesnyih_potolkov"
+                                                           target="_blank">
+                                                            Анкер-клин с 'ухом' WAM 6/60 для крепежа подвесных потолков</a>
+                                                                                                            </td>
+                                                    <td align="center">4792</td>
+                                                    <td>5,34                                                        руб.
+                                                    </td>
+                                                    <td>25 589,28                                                        руб.
+                                                    </td>
+                                                </tr>
+                                                                                            <input type="hidden" name="ids[]" value="1293"
+                                                       data-parent_id="1293"/>
+                                                <input type="hidden" name="quantity[1293]"
+                                                       data-parent_id="1293"
+                                                       value="1"/>
+
+                                                <tr data-parent_id="1293">
+                                                    <td class="cal_table_img">
+                                                        <img
+                                                            src="http://nem-ka.ru/images/Product/cache/dubel_potaj_218x191.jpg"
+                                                            alt="Дюбель-гвоздь гриб. для крепления подвесных потолков"
+                                                            title="Дюбель-гвоздь гриб. для крепления подвесных потолков">
+                                                    </td>
+                                                    <td>
+                                                        <a href="/catalog/product/dyubel_gvozd_grib_neylon_n_fix_6h_35_4000_sht_up"
+                                                           target="_blank">
+                                                            Дюбель-гвоздь гриб. нейлон N-FIX 6х 45, 180 шт/уп</a>
+                                                                                                            </td>
+                                                    <td align="center">1</td>
+                                                    <td>2 095,24                                                        руб.
+                                                    </td>
+                                                    <td>1 650,60                                                        руб.
+                                                    </td>
+                                                </tr>
+                                            
+
+                                        <tr class="cal_table_lastrow">
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td colspan="2" class="cal_table_price">
+                                                Общая сумма комплекта:<br/>
+                                                <b>7 290 997,39                                                    руб.</b>
+                                            </td>
+                                        </tr>
+
+                                        <tr class="cal_table_lastbtn">
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td colspan="2" class="cal_table_price">
+                                                <input type="submit" value="Купить" data-action="addForm"
+                                                       data-id="7">
+                                            </td>
+                                        </tr>
+                                    </table>
                                 </div>
+                                <input type="hidden" name="kitBox" value="7">
                             </form>
-                            <a class="close-btn js-close-params" href="/"></a>
                         </div>
-                    </div>
-                    <div class="catalog_properties_right">
-                        <form action="" method="post" name="sort">
-                            <div class="catalog_properties_right_item">
-                                Упорядочить:
-                                                <a href="javascript:void(0)"
-                                   class=""
-                                   data-ordering="title">по алфавиту</a>
-                                <a href="javascript:void(0)"
-                                   class=""
-                                   data-ordering="price">по цене</a>
-                            </div>
-                            <div class="catalog_properties_right_item">
-                                Показывать по: &nbsp;&nbsp;
-                                <select class="js-select select_b w60"
-                                        name="catalog-properties[items-per-page]">
-                                    <option
-                                        value="20">
-                                        20
-                                    </option>
-                                    <option
-                                        value="50">
-                                        50
-                                    </option>
-                                    <option
-                                        value="100">
-                                        100
-                                    </option>
-                                </select>
-                            </div>
-                            <input type="hidden" class="direction" name="catalog-properties[direction]"
-                                   value=""/>
-                            <input type="hidden" class="ordering" name="catalog-properties[ordering]"
-                                   value=""/>
-                        </form>
-                    </div>
-                </div>                        
+                                            <div id="tabs3-1">
+                            <form name="kitBox-10" method="post">
+                                <input type="hidden" name="x" value="124"/>
+                                <input type="hidden" name="y" value="56"/>
+                                <input type="hidden" name="parent_id" value="7899"/>
 
-<link rel="stylesheet" href="css/new_catalog_style.css"/>
-<script src="js/new_catalog_js.js"></script>
+                                <div class="cal_table">
+                                    <table>
+                                        <tr>
+                                            <th width="90px"></th>
+                                            <th>Наименование</th>
+                                            <th width="100px" align="center">Кол-во</th>
+                                            <th width="130px">Цена</th>
+                                            <th width="150px">Сумма</th>
+                                        </tr>
 
-<div class="catalog_container">
-<div class="list-view-topline">
-    <div class="catalog-style-box">
-        <a href="#" class="table-list-style active"></a>
-        <a href="#" class="horizontal-list-style"></a>
-    </div>
-    </div>
+                                                                                        <input type="hidden" name="ids[]" value="1294"
+                                                       data-parent_id="1294"/>
+                                                <input type="hidden" name="quantity[1294]"
+                                                       data-parent_id="1294"
+                                                       value="444"/>
 
-<div id="yw0" class="list-view">
+                                                <tr data-parent_id="1294">
+                                                    <td class="cal_table_img">
+                                                        <img
+                                                            src="http://nem-ka.ru/images/Product/cache/ventatec_gl_prof_218x191.jpg"
+                                                            alt="Несущая направляющая (профиль) каркаса «Knauf AMF» Ventatec T-15 3, 6 м. для подвесных потолков"
+                                                            title="Несущая направляющая (профиль) каркаса «Knauf AMF» Ventatec T-15 3, 6 м. для подвесных потолков">
+                                                    </td>
+                                                    <td>
+                                                        <a href="/catalog/product/glavnyiy_profil_karkasa_knauf_amf_ventatec_t_15_dlya_podvesnyih_potolkov"
+                                                           target="_blank">
+                                                            Несущая направляющая (профиль) каркаса «Knauf AMF» Ventatec T-15 3, 6 м. для подвесных потолков</a>
+                                                                                                            </td>
+                                                    <td align="center">444</td>
+                                                    <td>207,00                                                        руб.
+                                                    </td>
+                                                    <td>91 908,00                                                        руб.
+                                                    </td>
+                                                </tr>
+                                                                                            <input type="hidden" name="ids[]" value="1285"
+                                                       data-parent_id="1285"/>
+                                                <input type="hidden" name="quantity[1285]"
+                                                       data-parent_id="1285"
+                                                       value="5792"/>
 
-    <!-- NEW html -->
-        <div class="summary">Товары 1—2 из 2.</div>
+                                                <tr data-parent_id="1285">
+                                                    <td class="cal_table_img">
+                                                        <img
+                                                            src="http://nem-ka.ru/images/Product/cache/ventatec_poperpf_15_0_6_218x191.jpg"
+                                                            alt="Поперечная направляющая (профиль) каркаса Knauf AMF Ventatec  Т-15 для подвесных потолков марки АМФ Кнауф"
+                                                            title="Поперечная направляющая (профиль) каркаса Knauf AMF Ventatec  Т-15 для подвесных потолков марки АМФ Кнауф">
+                                                    </td>
+                                                    <td>
+                                                        <a href="/catalog/product/poperechnyiy_profil_karkasa_knauf_amf_ventatec"
+                                                           target="_blank">
+                                                            Поперечный профиль Т-15, L= 0,6м., 36 м.п./60 шт/уп.</a>
+                                                                                                            </td>
+                                                    <td align="center">5792</td>
+                                                    <td>34,50                                                        руб.
+                                                    </td>
+                                                    <td>199 824,00                                                        руб.
+                                                    </td>
+                                                </tr>
+                                                                                            <input type="hidden" name="ids[]" value="1285"
+                                                       data-parent_id="1285"/>
+                                                <input type="hidden" name="quantity[1285]"
+                                                       data-parent_id="1285"
+                                                       value="8045"/>
 
-        <div class="">
+                                                <tr data-parent_id="1285">
+                                                    <td class="cal_table_img">
+                                                        <img
+                                                            src="http://nem-ka.ru/images/Product/cache/ventatec_poperpf_15_0_6_218x191.jpg"
+                                                            alt="Поперечная направляющая (профиль) каркаса Knauf AMF Ventatec  Т-15 для подвесных потолков марки АМФ Кнауф"
+                                                            title="Поперечная направляющая (профиль) каркаса Knauf AMF Ventatec  Т-15 для подвесных потолков марки АМФ Кнауф">
+                                                    </td>
+                                                    <td>
+                                                        <a href="/catalog/product/poperechnyiy_profil_karkasa_knauf_amf_ventatec"
+                                                           target="_blank">
+                                                            Поперечный профиль Т-15, L=1.2,м., 72 м.п./60 шт/уп.</a>
+                                                                                                            </td>
+                                                    <td align="center">8045</td>
+                                                    <td>34,50                                                        руб.
+                                                    </td>
+                                                    <td>555 105,00                                                        руб.
+                                                    </td>
+                                                </tr>
+                                                                                            <input type="hidden" name="ids[]" value="1287"
+                                                       data-parent_id="1287"/>
+                                                <input type="hidden" name="quantity[1287]"
+                                                       data-parent_id="1287"
+                                                       value="4861"/>
 
-            <div class="catalog_item2">
+                                                <tr data-parent_id="1287">
+                                                    <td class="cal_table_img">
+                                                        <img
+                                                            src="http://nem-ka.ru/images/Product/cache/podvesi-_alfa_v_218x191.jpg"
+                                                            alt="Комплект подвесов  для подвесного потолка Альфа-V марки ПСА"
+                                                            title="Комплект подвесов  для подвесного потолка Альфа-V марки ПСА">
+                                                    </td>
+                                                    <td>
+                                                        <a href="/catalog/product/komplekt_podvesov__dlya_podvesnogo_potolka_alfa_v_marki_psa"
+                                                           target="_blank">
+                                                            Комплект подвесов 'Альфа-V' 0,5 м</a>
+                                                                                                            </td>
+                                                    <td align="center">4861</td>
+                                                    <td>5,11                                                        руб.
+                                                    </td>
+                                                    <td>24 839,71                                                        руб.
+                                                    </td>
+                                                </tr>
+                                                                                            <input type="hidden" name="ids[]" value="1286"
+                                                       data-parent_id="1286"/>
+                                                <input type="hidden" name="quantity[1286]"
+                                                       data-parent_id="1286"
+                                                       value="120"/>
 
-                <div class="catalog_item2__while-block">
+                                                <tr data-parent_id="1286">
+                                                    <td class="cal_table_img">
+                                                        <img
+                                                            src="http://nem-ka.ru/images/Product/cache/VENTATEC-16_218x191.jpg"
+                                                            alt="Уголок пристенный для подвесных потолков Ventatec 19/24 L = 3000 мм марки АМФ Кнауф"
+                                                            title="Уголок пристенный для подвесных потолков Ventatec 19/24 L = 3000 мм марки АМФ Кнауф">
+                                                    </td>
+                                                    <td>
+                                                        <a href="/catalog/product/ugolok_pristennyiy_ventatec_19_24_i_24_24_l__3000_mm_marki_amf_knauf"
+                                                           target="_blank">
+                                                            Уголок пристенный для подвесных потолков Ventatec 19/24 L = 3000 мм марки АМФ Кнауф</a>
+                                                                                                            </td>
+                                                    <td align="center">120</td>
+                                                    <td>198,24                                                        руб.
+                                                    </td>
+                                                    <td>23 788,80                                                        руб.
+                                                    </td>
+                                                </tr>
+                                                                                            <input type="hidden" name="ids[]" value="1292"
+                                                       data-parent_id="1292"/>
+                                                <input type="hidden" name="quantity[1292]"
+                                                       data-parent_id="1292"
+                                                       value="6944"/>
 
-                    <div class="catalog_item2_img">
-                        <a href="/catalog/product/terramiks_gladkiy__finishnaya_vyiravnivayuschaya___shtukaturka_terrako">
-                            
-                           <img src="http://nem-ka.ru/images/Product/cache/6bc59f6e377e1e07fb19e77b70581915_145x145.jpg"
-                                alt="Штукатурка финишная тонкослойная выравнивающая Terraco ТЕРРАМИКС гладкий белый  марки Террако"
-                                title="Штукатурка финишная тонкослойная выравнивающая Terraco ТЕРРАМИКС гладкий белый  марки Террако"/>
-                        </a>
-                    </div>
-                    
-                    <div class="catalog_item2_link">
-                        <div class="catalog_item2_link_inner">
-                            <a href="/catalog/product/terramiks_gladkiy__finishnaya_vyiravnivayuschaya___shtukaturka_terrako">
-                                Штукатурка финишная тонкослойная выравнивающая Terraco ТЕРРАМИКС гладкий белый марки Террако
-                            </a>
+                                                <tr data-parent_id="1292">
+                                                    <td class="cal_table_img">
+                                                        <img
+                                                            src="http://nem-ka.ru/images/Product/cache/anker_klin_s_yhom_218x191.jpg"
+                                                            alt="Анкер-клин с &#039;ухом&#039; WAM 6/60 для крепежа подвесных потолков"
+                                                            title="Анкер-клин с &#039;ухом&#039; WAM 6/60 для крепежа подвесных потолков">
+                                                    </td>
+                                                    <td>
+                                                        <a href="/catalog/product/anker_klin_s_uhom_wam_6_60_dlya_krepeja_podvesnyih_potolkov"
+                                                           target="_blank">
+                                                            Анкер-клин с 'ухом' WAM 6/60 для крепежа подвесных потолков</a>
+                                                                                                            </td>
+                                                    <td align="center">6944</td>
+                                                    <td>5,34                                                        руб.
+                                                    </td>
+                                                    <td>37 080,96                                                        руб.
+                                                    </td>
+                                                </tr>
+                                                                                            <input type="hidden" name="ids[]" value="1293"
+                                                       data-parent_id="1293"/>
+                                                <input type="hidden" name="quantity[1293]"
+                                                       data-parent_id="1293"
+                                                       value="1"/>
+
+                                                <tr data-parent_id="1293">
+                                                    <td class="cal_table_img">
+                                                        <img
+                                                            src="http://nem-ka.ru/images/Product/cache/dubel_potaj_218x191.jpg"
+                                                            alt="Дюбель-гвоздь гриб. для крепления подвесных потолков"
+                                                            title="Дюбель-гвоздь гриб. для крепления подвесных потолков">
+                                                    </td>
+                                                    <td>
+                                                        <a href="/catalog/product/dyubel_gvozd_grib_neylon_n_fix_6h_35_4000_sht_up"
+                                                           target="_blank">
+                                                            Дюбель-гвоздь гриб. нейлон N-FIX 6х 45, 180 шт/уп</a>
+                                                                                                            </td>
+                                                    <td align="center">1</td>
+                                                    <td>2 095,24                                                        руб.
+                                                    </td>
+                                                    <td>1 650,60                                                        руб.
+                                                    </td>
+                                                </tr>
+                                                                                            <input type="hidden" name="ids[]" value="1280"
+                                                       data-parent_id="1280"/>
+                                                <input type="hidden" name="quantity[1280]"
+                                                       data-parent_id="1280"
+                                                       value="1931"/>
+
+                                                <tr data-parent_id="1280">
+                                                    <td class="cal_table_img">
+                                                        <img
+                                                            src="http://nem-ka.ru/images/Product/cache/Thermatex_Acoustic_RUSS_218x191.jpg"
+                                                            alt="Плита АМФ Thermatex Acoustic Терматекс Акустик белый марки АМФ Кнауф"
+                                                            title="Плита АМФ Thermatex Acoustic Терматекс Акустик белый марки АМФ Кнауф">
+                                                    </td>
+                                                    <td>
+                                                        <a href="/catalog/product/plita_amf_thermatex_acoustic_termateks_akustik_belyiy_marki_amf_knauf"
+                                                           target="_blank">
+                                                            Терматекс Акустик SK RL белый 600*600*19мм, 10 шт/уп.</a>
+                                                                                                            </td>
+                                                    <td align="center">1931</td>
+                                                    <td>3 297,92                                                        руб.
+                                                    </td>
+                                                    <td>6 937 280,00                                                        руб.
+                                                    </td>
+                                                </tr>
+                                            
+
+                                        <tr class="cal_table_lastrow">
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td colspan="2" class="cal_table_price">
+                                                Общая сумма комплекта:<br/>
+                                                <b>7 871 477,07                                                    руб.</b>
+                                            </td>
+                                        </tr>
+
+                                        <tr class="cal_table_lastbtn">
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td colspan="2" class="cal_table_price">
+                                                <input type="submit" value="Купить" data-action="addForm"
+                                                       data-id="10">
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <input type="hidden" name="kitBox" value="10">
+                            </form>
                         </div>
-                    </div>
-
-                    <div class="catalog_item2_art">Арт:С-000040932</div>
-                    <span class="catalog_item2_price_status">Есть в наличии</span>
-                    <div class="catalog_item2__price-block">
-                        <div class="catalog_item2_price">
-                            <span>672.98</span><i class="rub"></i>
-                        </div>
-                        <div class="catalog_item2_price catalog_item2_price--grey">
-                            Цена за м2: <span>672.98</span><i class="rub"></i>
-                        </div>
-                    </div>
-
-                    <div class="catalog_item2_controls">
-                        <a class="catalog_item2_add_cart_btn" href="javascript:void(0)"
-                           data-id="451"
-                           data-quantity="1"
-                           data-action="/cart/put">В корзину</a>
-
-                        <a href="#" class="catalog_item2_blue_btn">Рассчитать потолок</a>
-                    </div>
-                </div>
-                
-                <div class="catalog_item2__grey-block">
-                    <div class="catalog_item2_weight"><span>Вес:</span> 20 кг.</div>
-                    <div class="catalog_item2_pallet"><span>Кол-во в паллете:</span> 40 шт.</div>
-                    <div class="catalog_item2_useful">
-                        <a href="/catalog/category/sverlenie_i_zavinchivanie">Сверление и завинчивание</a>, <a href="/catalog/category/peremeshivanie">Перемешивание</a>, <a href="/catalog/category/dlya_fasadov_i_plit">Для фасадов и плит</a>, <a href="/catalog/category/kelma_betonschika_tip_berlinskiy">Кельма бетонщика, тип «берлинский»</a>, <a href="/catalog/category/malyarnyie">Малярные</a>, <a href="/catalog/category/urovni_shtukaturnyie">Уровни штукатурные</a>, <a href="/catalog/category/perchatki">Перчатки</a>, <a href="/catalog/category/mkosti">Ёмкости</a> 
-                    </div>
-                    <div class="catalog_item2_text">
-                        Штукатурка финишная тонкослойная выравнивающая Terraco ТЕРРАМИКС гладкий белый  марки Террако  применяется на внешних и внутренних поверхностях для получения прочной, гладкой  обладающей водоотталкивающими свойствами финишной отделки, пригодной для нанесения краски  и оклеивания обоями.ТЕРРАМИКС Гладкий содержит как гидравлические, так и органические присадки, обеспечивающие хорошую адгезию с поверхностью, позволяет получить на стенах и потолке гладкую поверхность высокого качества.        </div>
-                    <div class="catalog_item2_compare">
-                        <a class="compare_left" href="javascript:void(0)"
-                               data-id="451"
-                               data-action="compare"><span>Добавить к сравнению</span>
-                        </a>
-
-                        <a href="javascript:void(0)"
-                               data-id="451"
-                               data-action="add_reserved"
-                               class="compare_right"><span>Отложить товар</span>
-                        </a>
-                    </div>
-                </div>
-                <div class="catalog_item2_characteristics_btn">Характеристики</div>
-                <div class="catalog_item2_params">
-                    <p>Характеристики товара:</p>
-                    <div class="catalog_item2_params_table_box">
-                        <table>
-                            <tr>
-                                <td>Связующие</td>
-                                <td>Гидравлические и органические связующие</td>
-                            </tr>
-                                                <tr>
-                                <td>Наполнитель</td>
-                                <td>Инертные тонкодисперсные наполнители.</td>
-                            </tr>
-                                                <tr>
-                                <td>Добавки</td>
-                                <td>Пластификаторы, вещества, усиливающие адгезию и удерживающие воду.</td>
-                            </tr>
-                                                <tr>
-                                <td>Усилие на разрыв / отрыв</td>
-                                <td>105 кПа/см²</td>
-                            </tr>
-                                                <tr>
-                                <td>Усилие на сжатие</td>
-                                <td>285 кПа/см²</td>
-                            </tr>
-                        </table>
-                    </div>
-                    <div class="catalog_item2_more">
-                        <a href="/catalog/product/terramiks_gladkiy__finishnaya_vyiravnivayuschaya___shtukaturka_terrako"
-                       class="more_btn">Все характеристики</a>
-                    </div>
-                </div>
+                                    </div>
             </div>
-
-            <div class="catalog_item2">
-
-                <div class="catalog_item2__while-block">
-
-                    <div class="catalog_item2_img">
-                        <a href="/catalog/product/terramiks_gladkiy__finishnaya_vyiravnivayuschaya___shtukaturka_terrako">
-                            
-                           <img src="http://nem-ka.ru/images/Product/cache/Texture_Seq_0002_145x145.png"
-                                alt="Штукатурка финишная тонкослойная выравнивающая Terraco ТЕРРАМИКС гладкий белый  марки Террако"
-                                title="Штукатурка финишная тонкослойная выравнивающая Terraco ТЕРРАМИКС гладкий белый  марки Террако"/>
-                        </a>
-                    </div>
-                    
-                    <div class="catalog_item2_link">
-                        <div class="catalog_item2_link_inner">
-                            <a href="/catalog/product/terramiks_gladkiy__finishnaya_vyiravnivayuschaya___shtukaturka_terrako">
-                                Штукатурка Terraco ТЕРРАМИКС
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="catalog_item2_art">Арт:С-000040932</div>
-                    <span class="catalog_item2_price_status">Есть в наличии</span>
-                    <div class="catalog_item2__price-block">
-                        <div class="catalog_item2_price">
-                            <span>6872.98</span><i class="rub"></i>
-                        </div>
-                        <div class="catalog_item2_price catalog_item2_price--grey">
-                            Цена за м2: <span>7672.98</span><i class="rub"></i>
-                        </div>
-                    </div>
-
-                    <div class="catalog_item2_controls">
-                        <a class="catalog_item2_add_cart_btn" href="javascript:void(0)"
-                           data-id="451"
-                           data-quantity="1"
-                           data-action="/cart/put">В корзину</a>
-
-                        <a href="#" class="catalog_item2_blue_btn">Рассчитать потолок</a>
-                    </div>
-                </div>
-                
-                <div class="catalog_item2__grey-block">
-                    <div class="catalog_item2_weight"><span>Вес:</span> 220 кг.</div>
-                    <div class="catalog_item2_pallet"><span>Кол-во в паллете:</span> 1440 шт.</div>
-                    <div class="catalog_item2_useful">
-                        <a href="/catalog/category/sverlenie_i_zavinchivanie">Сверление и завинчивание</a>, <a href="/catalog/category/peremeshivanie">Перемешивание</a>, <a href="/catalog/category/dlya_fasadov_i_plit">Для фасадов и плит</a>, <a href="/catalog/category/kelma_betonschika_tip_berlinskiy">Кельма бетонщика, тип «берлинский»</a>, <a href="/catalog/category/malyarnyie">Малярные</a>, <a href="/catalog/category/urovni_shtukaturnyie">Уровни штукатурные</a>, <a href="/catalog/category/perchatki">Перчатки</a>, <a href="/catalog/category/mkosti">Ёмкости</a> 
-                    </div>
-                    <div class="catalog_item2_text">
-                        Штукатурка финишная тонкослойная выравнивающая Terraco ТЕРРАМИКС гладкий белый  марки Террако  применяется на внешних и внутренних поверхностях для получения прочной, гладкой  обладающей водоотталкивающими свойствами финишной отделки, пригодной для нанесения краски  и оклеивания обоями.ТЕРРАМИКС Гладкий содержит как гидравлические, так и органические присадки, обеспечивающие хорошую адгезию с поверхностью, позволяет получить на стенах и потолке гладкую поверхность высокого качества.        </div>
-                    <div class="catalog_item2_compare">
-                        <a class="compare_left" href="javascript:void(0)"
-                               data-id="451"
-                               data-action="compare"><span>Добавить к сравнению</span>
-                        </a>
-
-                        <a href="javascript:void(0)"
-                               data-id="451"
-                               data-action="add_reserved"
-                               class="compare_right"><span>Отложить товар</span>
-                        </a>
-                    </div>
-                </div>
-                <div class="catalog_item2_characteristics_btn">Характеристики</div>
-                <div class="catalog_item2_params">
-                    <p>Характеристики товара:</p>
-                    <div class="catalog_item2_params_table_box">
-                        <table>
-                            <tr>
-                                <td>Связующие</td>
-                                <td>Гидравлические и органические связующие</td>
-                            </tr>
-                                                <tr>
-                                <td>Наполнитель</td>
-                                <td>Инертные тонкодисперсные наполнители.</td>
-                            </tr>
-                                                <tr>
-                                <td>Добавки</td>
-                                <td>Пластификаторы, вещества, усиливающие адгезию и удерживающие воду.</td>
-                            </tr>
-                                                <tr>
-                                <td>Усилие на разрыв / отрыв</td>
-                                <td>105 кПа/см²</td>
-                            </tr>
-                                                <tr>
-                                <td>Усилие на сжатие</td>
-                                <td>285 кПа/см²</td>
-                            </tr>
-                            <tr>
-                                <td>Связующие</td>
-                                <td>Гидравлические и органические связующие</td>
-                            </tr>
-                                                <tr>
-                                <td>Наполнитель</td>
-                                <td>Инертные тонкодисперсные наполнители.</td>
-                            </tr>
-                                                <tr>
-                                <td>Добавки</td>
-                                <td>Пластификаторы, вещества, усиливающие адгезию и удерживающие воду.</td>
-                            </tr>
-                                                <tr>
-                                <td>Усилие на разрыв / отрыв</td>
-                                <td>105 кПа/см²</td>
-                            </tr>
-                                                <tr>
-                                <td>Усилие на сжатие</td>
-                                <td>285 кПа/см²</td>
-                            </tr>
-                        </table>
-                    </div>
-                    <div class="catalog_item2_more">
-                        <a href="/catalog/product/terramiks_gladkiy__finishnaya_vyiravnivayuschaya___shtukaturka_terrako"
-                       class="more_btn">Все характеристики</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="catalog_item2">
-
-                <div class="catalog_item2__while-block">
-
-                    <div class="catalog_item2_img">
-                        <a href="/catalog/product/terramiks_gladkiy__finishnaya_vyiravnivayuschaya___shtukaturka_terrako">
-                            
-                           <img src="http://nem-ka.ru/images/Product/cache/6bc59f6e377e1e07fb19e77b70581915_145x145.jpg"
-                                alt="Штукатурка финишная тонкослойная выравнивающая Terraco ТЕРРАМИКС гладкий белый  марки Террако"
-                                title="Штукатурка финишная тонкослойная выравнивающая Terraco ТЕРРАМИКС гладкий белый  марки Террако"/>
-                        </a>
-                    </div>
-                    
-                    <div class="catalog_item2_link">
-                        <div class="catalog_item2_link_inner">
-                            <a href="/catalog/product/terramiks_gladkiy__finishnaya_vyiravnivayuschaya___shtukaturka_terrako">
-                                Штукатурка финишная тонкослойная выравнивающая Terraco ТЕРРАМИКС гладкий белый марки Террако
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="catalog_item2_art">Арт:С-000040932</div>
-                    <span class="catalog_item2_price_status">Есть в наличии</span>
-                    <div class="catalog_item2__price-block">
-                        <div class="catalog_item2_price">
-                            <span>672.98</span><i class="rub"></i>
-                        </div>
-                        <div class="catalog_item2_price catalog_item2_price--grey">
-                            Цена за м2: <span>672.98</span><i class="rub"></i>
-                        </div>
-                    </div>
-
-                    <div class="catalog_item2_controls">
-                        <a class="catalog_item2_add_cart_btn" href="javascript:void(0)"
-                           data-id="451"
-                           data-quantity="1"
-                           data-action="/cart/put">В корзину</a>
-
-                        <a href="#" class="catalog_item2_blue_btn">Рассчитать потолок</a>
-                    </div>
-                </div>
-                
-                <div class="catalog_item2__grey-block">
-                    <div class="catalog_item2_weight"><span>Вес:</span> 20 кг.</div>
-                    <div class="catalog_item2_pallet"><span>Кол-во в паллете:</span> 40 шт.</div>
-                    <div class="catalog_item2_useful">
-                        <a href="/catalog/category/sverlenie_i_zavinchivanie">Сверление и завинчивание</a>, <a href="/catalog/category/peremeshivanie">Перемешивание</a>, <a href="/catalog/category/dlya_fasadov_i_plit">Для фасадов и плит</a>, <a href="/catalog/category/kelma_betonschika_tip_berlinskiy">Кельма бетонщика, тип «берлинский»</a>, <a href="/catalog/category/malyarnyie">Малярные</a>, <a href="/catalog/category/urovni_shtukaturnyie">Уровни штукатурные</a>, <a href="/catalog/category/perchatki">Перчатки</a>, <a href="/catalog/category/mkosti">Ёмкости</a> 
-                    </div>
-                    <div class="catalog_item2_text">
-                        Штукатурка финишная тонкослойная выравнивающая Terraco ТЕРРАМИКС гладкий белый  марки Террако  применяется на внешних и внутренних поверхностях для получения прочной, гладкой  обладающей водоотталкивающими свойствами финишной отделки, пригодной для нанесения краски  и оклеивания обоями.ТЕРРАМИКС Гладкий содержит как гидравлические, так и органические присадки, обеспечивающие хорошую адгезию с поверхностью, позволяет получить на стенах и потолке гладкую поверхность высокого качества.        </div>
-                    <div class="catalog_item2_compare">
-                        <a class="compare_left" href="javascript:void(0)"
-                               data-id="451"
-                               data-action="compare"><span>Добавить к сравнению</span>
-                        </a>
-
-                        <a href="javascript:void(0)"
-                               data-id="451"
-                               data-action="add_reserved"
-                               class="compare_right"><span>Отложить товар</span>
-                        </a>
-                    </div>
-                </div>
-                <div class="catalog_item2_characteristics_btn">Характеристики</div>
-                <div class="catalog_item2_params">
-                    <p>Характеристики товара:</p>
-                    <div class="catalog_item2_params_table_box">
-                        <table>
-                            <tr>
-                                <td>Связующие</td>
-                                <td>Гидравлические и органические связующие</td>
-                            </tr>
-                                                <tr>
-                                <td>Наполнитель</td>
-                                <td>Инертные тонкодисперсные наполнители.</td>
-                            </tr>
-                                                <tr>
-                                <td>Добавки</td>
-                                <td>Пластификаторы, вещества, усиливающие адгезию и удерживающие воду.</td>
-                            </tr>
-                                                <tr>
-                                <td>Усилие на разрыв / отрыв</td>
-                                <td>105 кПа/см²</td>
-                            </tr>
-                                                <tr>
-                                <td>Усилие на сжатие</td>
-                                <td>285 кПа/см²</td>
-                            </tr>
-                        </table>
-                    </div>
-                    <div class="catalog_item2_more">
-                        <a href="/catalog/product/terramiks_gladkiy__finishnaya_vyiravnivayuschaya___shtukaturka_terrako"
-                       class="more_btn">Все характеристики</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="catalog_item2">
-
-                <div class="catalog_item2__while-block">
-
-                    <div class="catalog_item2_img">
-                        <a href="/catalog/product/terramiks_gladkiy__finishnaya_vyiravnivayuschaya___shtukaturka_terrako">
-                            
-                           <img src="http://nem-ka.ru/images/Product/cache/6bc59f6e377e1e07fb19e77b70581915_145x145.jpg"
-                                alt="Штукатурка финишная тонкослойная выравнивающая Terraco ТЕРРАМИКС гладкий белый  марки Террако"
-                                title="Штукатурка финишная тонкослойная выравнивающая Terraco ТЕРРАМИКС гладкий белый  марки Террако"/>
-                        </a>
-                    </div>
-                    
-                    <div class="catalog_item2_link">
-                        <div class="catalog_item2_link_inner">
-                            <a href="/catalog/product/terramiks_gladkiy__finishnaya_vyiravnivayuschaya___shtukaturka_terrako">
-                                Штукатурка финишная тонкослойная выравнивающая Terraco ТЕРРАМИКС гладкий белый марки Террако
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="catalog_item2_art">Арт:С-000040932</div>
-                    <span class="catalog_item2_price_status">Есть в наличии</span>
-                    <div class="catalog_item2__price-block">
-                        <div class="catalog_item2_price">
-                            <span>672.98</span><i class="rub"></i>
-                        </div>
-                        <div class="catalog_item2_price catalog_item2_price--grey">
-                            Цена за м2: <span>672.98</span><i class="rub"></i>
-                        </div>
-                    </div>
-
-                    <div class="catalog_item2_controls">
-                        <a class="catalog_item2_add_cart_btn" href="javascript:void(0)"
-                           data-id="451"
-                           data-quantity="1"
-                           data-action="/cart/put">В корзину</a>
-
-                        <a href="#" class="catalog_item2_blue_btn">Рассчитать потолок</a>
-                    </div>
-                </div>
-                
-                <div class="catalog_item2__grey-block">
-                    <div class="catalog_item2_weight"><span>Вес:</span> 20 кг.</div>
-                    <div class="catalog_item2_pallet"><span>Кол-во в паллете:</span> 40 шт.</div>
-                    <div class="catalog_item2_useful">
-                        <a href="/catalog/category/sverlenie_i_zavinchivanie">Сверление и завинчивание</a>, <a href="/catalog/category/peremeshivanie">Перемешивание</a>, <a href="/catalog/category/dlya_fasadov_i_plit">Для фасадов и плит</a>, <a href="/catalog/category/kelma_betonschika_tip_berlinskiy">Кельма бетонщика, тип «берлинский»</a>, <a href="/catalog/category/malyarnyie">Малярные</a>, <a href="/catalog/category/urovni_shtukaturnyie">Уровни штукатурные</a>, <a href="/catalog/category/perchatki">Перчатки</a>, <a href="/catalog/category/mkosti">Ёмкости</a> 
-                    </div>
-                    <div class="catalog_item2_text">
-                        Штукатурка финишная тонкослойная выравнивающая Terraco ТЕРРАМИКС гладкий белый  марки Террако  применяется на внешних и внутренних поверхностях для получения прочной, гладкой  обладающей водоотталкивающими свойствами финишной отделки, пригодной для нанесения краски  и оклеивания обоями.ТЕРРАМИКС Гладкий содержит как гидравлические, так и органические присадки, обеспечивающие хорошую адгезию с поверхностью, позволяет получить на стенах и потолке гладкую поверхность высокого качества.        </div>
-                    <div class="catalog_item2_compare">
-                        <a class="compare_left" href="javascript:void(0)"
-                               data-id="451"
-                               data-action="compare"><span>Добавить к сравнению</span>
-                        </a>
-
-                        <a href="javascript:void(0)"
-                               data-id="451"
-                               data-action="add_reserved"
-                               class="compare_right"><span>Отложить товар</span>
-                        </a>
-                    </div>
-                </div>
-                <div class="catalog_item2_characteristics_btn">Характеристики</div>
-                <div class="catalog_item2_params">
-                    <p>Характеристики товара:</p>
-                    <div class="catalog_item2_params_table_box">
-                        <table>
-                            <tr>
-                                <td>Связующие</td>
-                                <td>Гидравлические и органические связующие</td>
-                            </tr>
-                                                <tr>
-                                <td>Наполнитель</td>
-                                <td>Инертные тонкодисперсные наполнители.</td>
-                            </tr>
-                                                <tr>
-                                <td>Добавки</td>
-                                <td>Пластификаторы, вещества, усиливающие адгезию и удерживающие воду.</td>
-                            </tr>
-                                                <tr>
-                                <td>Усилие на разрыв / отрыв</td>
-                                <td>105 кПа/см²</td>
-                            </tr>
-                                                <tr>
-                                <td>Усилие на сжатие</td>
-                                <td>285 кПа/см²</td>
-                            </tr>
-                        </table>
-                    </div>
-                    <div class="catalog_item2_more">
-                        <a href="/catalog/product/terramiks_gladkiy__finishnaya_vyiravnivayuschaya___shtukaturka_terrako"
-                       class="more_btn">Все характеристики</a>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    <!-- end NEW html -->
-
-<div class="keys" style="display:none" title="/catalog/category/remontnyie_sostavyi"><span>451</span><span>1267</span></div>
-</div>                        </div>
-                        <div class="catalog_items_info">
-                            Применяются  на внешних и внутренних поверхностях для получения прочной, гладкой  обладающей водоотталкивающими свойствами финишной отделки, пригодной для нанесения краски  и оклеивания обоями.                        </div>
-                        <div id="details" class="catalog_items_info" style="display: none">
-                            <p>
-	Применяются &nbsp;на внешних и внутренних поверхностях для получения прочной, гладкой &nbsp;обладающей водоотталкивающими свойствами финишной отделки, пригодной для нанесения краски &nbsp;и оклеивания обоями.</p>
-                        </div>
-                        <div class="catalog_item_more">
-                            <a href="javascript:void(0)" onclick="$('#details').slideToggle();"
-                               class="more_btn big_blue_btn"> подробнее</a>
-                        </div>
-                                                </div>
         </div>
     </div>
-    <!--END  wrap-->
-</div>
-<!--END  body-->        </div>
+<script type="application/javascript">
+    $(document).ready(function () {
+        $('*[data-action="addForm"]').on('click', function () {
+            var kitId = $(this).data('id'),
+                form = $('form[name="kitBox-' + kitId + '"]');
+            form.append('<input type="hidden" name="addBasket" value="Y" />');
+console.log(form)
+            $.post(document.location.href, form.serialize(), function () {
+                nemKa.fancyAlert();
+                nemKa.updateMiniCart();
+            }, 'json')
+            return false;
+        })
+    })
+</script>        </div>
         <!-- END  body-->
 
     </div>
@@ -2089,7 +1843,7 @@
 
 <!-- BEGIN  footer-->
 <footer class="layout__footer">
-    <div class="bot_panel" style="display: none">
+    <div class="bot_panel" style="display: ">
         <div class="bot_panel_wrap">
             <ul class="bot_panel_right">
                 <li class="bot_panel_item">
@@ -2102,11 +1856,11 @@
                 </li>
                 <li class="bot_panel_item">
                     <a href="/cart" class="bot_panel_link">Корзина:</a>
-                    <span class="bot_panel_number" id="boot_count_cart">0</span>
+                    <span class="bot_panel_number" id="boot_count_cart">1</span>
                         <span
                             class="bot_panel_text">на сумму
                             <span
-                                id="boot_cart_price">0.00</span> руб.</span>
+                                id="boot_cart_price">218.00</span> руб.</span>
                 </li>
             </ul>
         </div>
@@ -2207,7 +1961,6 @@
                     <ul class="footer-menu">
                 <li class="title">Производители</li>
                                     <li><a href="/catalog/category/volma">Волма</a></li>
-                                    <li><a href="/catalog/category/mureksin">Мурексин</a></li>
                                     <li><a href="/catalog/category/kiilto_kesto">Киилто Кесто</a></li>
                                     <li><a href="/catalog/category/bergauf">Бергауф</a></li>
                                     <li><a href="/catalog/category/festool">FESTOOL</a></li>
@@ -2225,14 +1978,9 @@
                                     <li><a href="/catalog/category/knauf">Кнауф</a></li>
                                     <li><a href="/catalog/category/zubr">Зубр</a></li>
                                     <li><a href="/catalog/category/paroc">Paroc</a></li>
-                                    <li><a href="/catalog/category/thermomax">Thermomax</a></li>
-                                    <li><a href="/catalog/category/stockbig">Stockbig</a></li>
                                     <li><a href="/catalog/category/gyproc">Gyproc</a></li>
-                                    <li><a href="/catalog/category/baulux">Baulux</a></li>
-                                    <li><a href="/catalog/category/raytver">Райтвер</a></li>
                                     <li><a href="/catalog/category/unis">UNIS</a></li>
                                     <li><a href="/catalog/category/ceresit">Ceresit</a></li>
-                                    <li><a href="/catalog/category/baumit">Baumit</a></li>
                                     <li><a href="/catalog/category/tdstels">TDSTELS</a></li>
                                     <li><a href="/catalog/category/lyumsvet">Люмсвет</a></li>
                                     <li><a href="/catalog/category/xglass">X-GLASS</a></li>
@@ -2243,7 +1991,6 @@
                                     <li><a href="/catalog/category/osnovit">Основит</a></li>
                                     <li><a href="/catalog/category/glims">Глимс</a></li>
                                     <li><a href="/catalog/category/de_luxe">De LUXE</a></li>
-                                    <li><a href="/catalog/category/litokol">Litokol</a></li>
                                     <li><a href="/catalog/category/pufas">PUFAS</a></li>
                                     <li><a href="/catalog/category/artel">Артель</a></li>
                                     <li><a href="/catalog/category/makita">Makita</a></li>
@@ -2399,6 +2146,14 @@
 <script id="rhlpscrtg" type="text/javascript" charset="utf-8" async="async"
         src="https://web.redhelper.ru/service/main.js?c=nemka">
 </script>
-
+<!--/Redhelper -->
+<script type="text/javascript">
+/*<![CDATA[*/
+jQuery(function($) {
+jQuery('a[rel="tooltip"]').tooltip();
+jQuery('a[rel="popover"]').popover();
+});
+/*]]>*/
+</script>
 </body>
 </html>
