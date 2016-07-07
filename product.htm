@@ -1364,7 +1364,7 @@
         </div>
         <div class="goods-main-table__col2">
             <!-- BEGIN  product-card-->
-            <div class="b-product-card">
+<!--             <div class="b-product-card">
                 <div class="b-product-card__topline">
                     <div class="product-card__info"><i class="iconbg iconbg--info-ylw"></i> Цена за мешок</div>
                     <div class="product-card__info">
@@ -1420,8 +1420,75 @@
                     </div>
                     <input type="submit" class="add-btn addtocart" value="Добавить в заказ"/>
                 </form>
-            </div>
+            </div> -->
             <!--END product-card-->
+             <form action="/cart/put" name="cart-form">
+                <table class="b-product-card b-product-card--table">
+                    <tr>
+                        <td>
+                            <div class="b-product-card__topline">
+                                <div class="product-card__info"><i class="iconbg iconbg--info-ylw"></i> Цена за мешок</div>
+                                <div class="product-card__info">
+                                    Вес: <span>
+                                        <span id="_set_weight_">25</span> кг.
+                                    </span>
+                                </div>
+                                <div class="product-card__info">
+                                    Количество в паллете: <span>60 шт.</span>
+                                </div>
+                            </div>
+                            <div class="product-card__form">
+                                <div class="input-wrap">
+                                    <span class="input-wrap__label"><strong>Кол-во:</strong></span>
+                                    <input type="text" value="1" name="quantity"/>
+                                </div>
+                                <input type="hidden" name="id" value="1187"/>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <meta itemprop="brand" content="Стройбриг"/>
+                            <div class="price-block" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                                <span class="main-price" itemprop="price">
+                                    172.00 <i>рублей</i>
+                                </span>
+                                <div class="main-price__tip">Цена за п.м. - 57.50 руб.</div>
+                                <span class="special-offer__label ">Есть в  наличии</span>
+                            </div>
+                            <meta itemprop="priceCurrency" content="RUR"/>
+                            <meta itemprop="availability" content="InStock"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="b-calc">
+                                <a class="b-calc-btn js-show-calc" href="/"><span>КАЛЬКУЛЯТОР РАСХОДА</span></a>
+
+                                <div class="calc__hide-block" style="display: none;">
+                                    <div class="input-wrap">
+                                        <span class="input-wrap__label">Площадь (м2):</span>
+                                        <input type="text" name="m2">
+                                    </div>
+                                    <div class="input-wrap">
+                                        <span class="input-wrap__label">Толщина слоя (мм):</span>
+                                        <input type="text" name="mm">
+                                    </div>
+                                    <div class="input-wrap cleara">
+                                        <a class="turn-btn js-hide-calc" href="#"><span>свернуть</span></a>
+                                        <input type="submit" value="РАССЧИТАТЬ" data-id="1259" class="calculate-price-btn">
+                                    </div>
+                                    <div class="input-wrap_last cleara">
+                                        <p>Рекомендуемое кол-во материала: <b>~</b></p>
+                                        <input type="submit" value="ДОБАВИТЬ В ЗАКАЗ" class="calculate-price-btn orange">
+                                    </div>
+                                </div>
+                            </div>
+                            <input type="submit" class="add-btn addtocart" value="Добавить в заказ"/>
+                        </td>
+                    </tr>
+                </table>
+            </form>
         </div>
                     <div class="goods-main-table__col3">
                     <div class="goods-characteristics">
