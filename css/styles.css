@@ -5925,8 +5925,8 @@ select.js-select {
 }
 
 .product-card__middle-box .special-offer__price{
-    color: #47595e;
-    border: 0;
+    color: #47595e!important;
+    border: 0!important;
 }
 
 .b-product-card--view3 .product-card__middle-box{
