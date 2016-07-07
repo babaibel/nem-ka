@@ -179,7 +179,7 @@
 }
 
 .catalog_item2_price span{
-    font: bold 20px/22px Arial;
+    font: bold 20px/20px Arial;
     color: #000;
     display: inline-block;
     vertical-align: middle;
@@ -197,6 +197,7 @@
 .catalog_item2_price--grey{
     background: #f6f6f6;
     padding: 4.5px 10px;
+    margin: 5px 0;
 }
 
 .catalog_item2_price--grey span{
