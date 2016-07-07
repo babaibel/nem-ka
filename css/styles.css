@@ -5818,7 +5818,7 @@ select.js-select {
 .manufacturers_item .text {
     color: #434343;
     font: 13px/17px Arial, sans-serif;
-    max-height: 68px;
+    height: 68px;
     overflow: hidden;
     margin-bottom: 17px;
 }
