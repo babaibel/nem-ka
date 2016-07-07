@@ -229,9 +229,9 @@ body {
 }
 
 .b-search-form .search-example {
-    color: #0197d4;
+    color: #f36600;
     text-decoration: none;
-    border-bottom: 1px dashed #0197d4;
+    border-bottom: 1px dashed #f36600;
 }
 
 .b-search-form .search-example:hover {
@@ -274,7 +274,7 @@ body {
 .b-header__contacts .contact-link {
     display: inline-block;
     text-decoration: none;
-    color: #0197d4;
+    color: #f36600;
     font: 14px/20px Arial, sans-serif;
 }
 
