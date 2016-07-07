@@ -5363,6 +5363,13 @@ select.js-select {
     margin-right: 0;
 }
 
+.catalog1 .news_item:nth-child(2n){
+    margin-right: 0;
+}
+
+.catalog1 .news_item:nth-child(2n+1){
+    margin-right: 20px;
+}
 
 .catalog_item_compare .compare_right{
   height: 25px;
